@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <title>TalentLogy</title>
   </head>
   <body>
     <header>
       <h1>Ejercicios de Variables</h1>
     </header>
-    <div class="">
+    <div class="container">
+      <h2>Primer Ejercicio</h2>
       <p>
         Escribe un programa que pida un número entero, y conteste al usuario:
         “Has introducido el número (x), gracias”.
@@ -18,7 +25,7 @@
       <div id="element">...</div>
     </div>
 
-    <div>
+    <div class="container">
       <h2>Segundo Ejercicio</h2>
       <p>
         Escribe un programa que pregunte el precio, el tanto por ciento de
@@ -28,6 +35,23 @@
       </p>
 
       <div id="elementDos">...</div>
+    </div>
+
+    <div class="container">
+      <h2>Tercer Ejercicio</h2>
+      <p>
+        Suponiendo que 1 euro = 1.33250 dólares. Escribe un programa que pida al
+        usuario un número de dólares y calcule el cambio en euros.
+      </p>
+
+      <div id="">
+        <form name="convertidor">
+          <input id="input" type="text" name="dolar" value="dolar" />
+          <input id="inputTotal" type="text" name="euro" value="euro" />
+
+          <button id="button">Convertir</button>
+        </form>
+      </div>
     </div>
     <script src="./js/main.js"></script>
   </body>
