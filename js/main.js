@@ -49,7 +49,6 @@ button.addEventListener("click", calculateChange);
 
 // CUARTO EJERCICO
 
-
 const num1 = 40;
 const num2 = 50;
 const num3 = 60;
