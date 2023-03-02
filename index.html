@@ -16,24 +16,30 @@
     <header>
       <h1>Ejercicios de Variables</h1>
     </header>
-    <div class="container border p-3">
-      <h2>Primer Ejercicio</h2>
+    <!-- Primer ejercicio  -->
+    <div class="container border p-5">
+      <h2 class="text-success">Primer Ejercicio</h2>
       <p>
         Escribe un programa que pida un número entero, y conteste al usuario:
         “Has introducido el número (x), gracias”.
       </p>
       <div>
         <form action="">
-          <input id="inputNumber" type="text" placeholder="Ingresar numero" />
-          <button id="btnNumber" class="btn btn-danger">Ver</button>
+          <div>
+            <input id="inputNumber" type="text" placeholder="Ingresar numero" />
+            <button id="btnNumber" class="btn btn-success">Ver número</button>
+          </div>
         </form>
       </div>
-      <div id="element">...</div>
+      <br />
+      <p class="text-success">Resultado</p>
+      <div id="element" class="border border-success">...</div>
     </div>
+    <br />
     <!-- Segundo ejercicio de variables -->
-    <div class="container">
+    <div class="container border p-5">
       <div>
-        <h2>Segundo Ejercicio</h2>
+        <h2 class="text-info">Segundo Ejercicio</h2>
         <p>
           Escribe un programa que pregunte el precio, el tanto por ciento de
           descuento, y te diga el precio con descuento. Por ejemplo, si el
@@ -43,19 +49,21 @@
       </div>
       <div class="">
         <form>
-          <input id="products" type="text" placeholder="Precio producto" />
-          <input id="discount" type="text" placeholder="Descuento " />
-          <button id="btn" class="btn btn-info">descuento</button>
+          <div>
+            <input id="products" type="text" placeholder="Precio producto" />
+            <input id="discount" type="text" placeholder="Descuento " />
+            <button id="btn" class="btn btn-info">Descuento</button>
+          </div>
         </form>
       </div>
       <br />
-      <h2 class="text-danger">RESULTADO:</h2>
-      <div id="elementDos" class="border">...</div>
+      <p class="text-info">Resultado..</p>
+      <div id="elementDos" class="border border-info">...</div>
     </div>
     <br />
     <!-- Tercel ejercicio de variables -->
-    <div class="container">
-      <h2>Tercer Ejercicio</h2>
+    <div class="container border p-5">
+      <h2 class="text-warning">Tercer Ejercicio</h2>
       <p>
         Suponiendo que 1 euro = 1.33250 dólares. Escribe un programa que pida al
         usuario un número de dólares y calcule el cambio en euros.
@@ -63,12 +71,42 @@
 
       <div>
         <form name="convertidor">
-          <input id="input" type="text" name="dolar" placeholder="Dolar" />
-          <input id="inputTotal" type="text" name="euro" placeholder="Euro" />
-          <button id="button">Convertir</button>
+          <div>
+            <input id="input" type="text" name="dolar" placeholder="Dolar" />
+            <button id="button" class="btn btn-warning">Convertir</button>
+          </div>
         </form>
       </div>
+      <div>
+        <p class="text-warning">Resultado...</p>
+        <div id="elemenTotal" class="border border-warning">....</div>
+      </div>
     </div>
+    <br />
+
+    <!-- Cuarto ejercico -->
+    <div class="container border">
+      <p>
+        Escribir un programa que pida por teclado cuatro números y calcule y
+        presente la media de los cuatro
+      </p>
+    </div>
+    <br />
+    <footer class="bg-dark m-100 h-100">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et excepturi
+        dolor esse quis dicta neque recusandae doloremque, cumque harum impedit
+        reiciendis voluptates dolores iure alias sint animi aliquid, sequi
+        vitae?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et excepturi
+        dolor esse quis dicta neque recusandae doloremque, cumque harum impedit
+        reiciendis voluptates dolores iure alias sint animi aliquid, sequi
+        vitae?
+      </p>
+    </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>

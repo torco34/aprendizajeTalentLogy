@@ -6,7 +6,7 @@ function viewNumber(e) {
   e.preventDefault();
   let value = inputNumber.value;
 
-  element.innerHTML = `Has intruducido el numero ${value} Gracias`;
+  element.innerHTML = `Has introducido el numero ${value} Gracias`;
 }
 btnNumber.addEventListener("click", viewNumber);
 
@@ -20,7 +20,7 @@ function discountPrice(e) {
   e.preventDefault();
   let valueProduct = inputProducts.value;
   let discountProduct = inputDiscount.value;
-  const preciTatal = Math.abs(
+  const preciTotal = Math.abs(
     (valueProduct * discountProduct) / 100 - valueProduct
   );
   elementDos.innerHTML = `El precio es de 
@@ -31,17 +31,18 @@ function discountPrice(e) {
 
 btn.addEventListener("click", discountPrice);
 
-// CUARTO EJERCICIO
+// tercer EJERCICIO
 
 const button = document.getElementById("button");
 const input = document.getElementById("input");
-const inputTotal = document.getElementById("inputTotal");
+const elementTotal = document.getElementById("elemenTotal");
 
 function calculateChange(e) {
   e.preventDefault();
-  let dollar = input.value * 1;
-  let values = 1.3325 * dollar;
-  console.log(`dolar ${values}`);
+  let dollar = input.value;
+  let valueEnd = dollar / 1.3325;
+  valueEnd = valueEnd.toFixed(2);
+  elementTotal.innerHTML = `Este es el resultado en Euro ${valueEnd}`;
 }
 
 button.addEventListener("click", calculateChange);
