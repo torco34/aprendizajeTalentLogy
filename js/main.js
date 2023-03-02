@@ -69,6 +69,12 @@ const btnResistes = document.getElementById("btnResist");
 function sumar(e) {
   e.preventDefault();
 
+
+
+
+
+
+
   let valor1 = parseInt(resistencia1.value);
   let valor2 = parseInt(resistencia2.value);
   let suma = valor1 + valor2;
