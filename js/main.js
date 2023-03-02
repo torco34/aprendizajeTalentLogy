@@ -47,18 +47,32 @@ function calculateChange(e) {
 
 button.addEventListener("click", calculateChange);
 
-// CUARTO EJERCICO
+// CUARTO EJERCICIO
+// const num1 = document.getElementById("num1");
+// const num2 = document.getElementById("num2");
+// const num3 = document.getElementById("num3");
+// const num4 = document.getElementById("btnMedia");
+const numeros = document.getElementsByClassName("num1");
+const btnMedia = document.getElementById("btnMedia");
 
-const num1 = 40;
-const num2 = 50;
-const num3 = 60;
-const num4 = 70;
+// console.log(numeros[]);
+for (let i = 0; i > numeros.length; i++) {
+  console.log([i]);
+}
+function media(e) {
+  e.preventDefault();
+  let numeross = numeros;
+  console.log(numeross[2].value);
+}
 
-let resultadoSuma = num1 + num2;
-let resultadoSuma2 = num3 + num2;
-resulTotal = resultadoSuma + resultadoSuma2;
-const resultadoFinal = resulTotal / 3;
-console.log(resultadoFinal);
+btnMedia.addEventListener("click", media);
+
+// console.log(numeros);
+// let resultadoSuma = num1 + num2;
+// let resultadoSuma2 = num3 + num2;
+// resulTotal = resultadoSuma + resultadoSuma2;
+// const resultadoFinal = resulTotal / 3;
+// console.log(resultadoFinal);
 
 //  QUINTO EJERCICIO
 const resistencia1 = document.getElementById("resistencia1");
