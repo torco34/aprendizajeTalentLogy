@@ -16,27 +16,44 @@
     <header>
       <h1>Ejercicios de Variables</h1>
     </header>
-    <div class="container">
+    <div class="container border p-3">
       <h2>Primer Ejercicio</h2>
       <p>
         Escribe un programa que pida un número entero, y conteste al usuario:
         “Has introducido el número (x), gracias”.
       </p>
+      <div>
+        <form action="">
+          <input id="inputNumber" type="text" placeholder="Ingresar numero" />
+          <button id="btnNumber" class="btn btn-danger">Ver</button>
+        </form>
+      </div>
       <div id="element">...</div>
     </div>
-
+    <!-- Segundo ejercicio de variables -->
     <div class="container">
-      <h2>Segundo Ejercicio</h2>
-      <p>
-        Escribe un programa que pregunte el precio, el tanto por ciento de
-        descuento, y te diga el precio con descuento. Por ejemplo, si el precio
-        que introduce el usuario es 300 y el descuento 20, el programa dirá que
-        el precio final con descuento es de 240.
-      </p>
-
-      <div id="elementDos">...</div>
+      <div>
+        <h2>Segundo Ejercicio</h2>
+        <p>
+          Escribe un programa que pregunte el precio, el tanto por ciento de
+          descuento, y te diga el precio con descuento. Por ejemplo, si el
+          precio que introduce el usuario es 300 y el descuento 20, el programa
+          dirá que el precio final con descuento es de 240.
+        </p>
+      </div>
+      <div class="">
+        <form>
+          <input id="products" type="text" placeholder="Precio producto" />
+          <input id="discount" type="text" placeholder="Descuento " />
+          <button id="btn" class="btn btn-info">descuento</button>
+        </form>
+      </div>
+      <br />
+      <h2 class="text-danger">RESULTADO:</h2>
+      <div id="elementDos" class="border">...</div>
     </div>
-
+    <br />
+    <!-- Tercel ejercicio de variables -->
     <div class="container">
       <h2>Tercer Ejercicio</h2>
       <p>
@@ -44,11 +61,10 @@
         usuario un número de dólares y calcule el cambio en euros.
       </p>
 
-      <div id="">
+      <div>
         <form name="convertidor">
-          <input id="input" type="text" name="dolar" value="dolar" />
-          <input id="inputTotal" type="text" name="euro" value="euro" />
-
+          <input id="input" type="text" name="dolar" placeholder="Dolar" />
+          <input id="inputTotal" type="text" name="euro" placeholder="Euro" />
           <button id="button">Convertir</button>
         </form>
       </div>
