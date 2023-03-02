@@ -31,7 +31,7 @@ function discountPrice(e) {
 
 btn.addEventListener("click", discountPrice);
 
-// tercer EJERCICIO
+// TERCER EJERCICIO
 
 const button = document.getElementById("button");
 const input = document.getElementById("input");
@@ -46,3 +46,48 @@ function calculateChange(e) {
 }
 
 button.addEventListener("click", calculateChange);
+
+// CUARTO EJERCICO
+
+const num1 = 40;
+const num2 = 50;
+const num3 = 60;
+
+let resultadoSuma = num1 + num2;
+resulTotal = resultadoSuma + num1;
+
+const resultadoFinal = resulTotal / 3;
+
+console.log(resultadoFinal);
+//  QUINTO EJERCICIO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
