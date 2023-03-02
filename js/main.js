@@ -49,45 +49,34 @@ button.addEventListener("click", calculateChange);
 
 // CUARTO EJERCICO
 
+
 const num1 = 40;
 const num2 = 50;
 const num3 = 60;
+const num4 = 70;
 
 let resultadoSuma = num1 + num2;
-resulTotal = resultadoSuma + num1;
-
+let resultadoSuma2 = num3 + num2;
+resulTotal = resultadoSuma + resultadoSuma2;
 const resultadoFinal = resulTotal / 3;
-
 console.log(resultadoFinal);
+
 //  QUINTO EJERCICIO
+const resistencia1 = document.getElementById("resistencia1");
+const resistencia2 = document.getElementById("resistencia2");
+const elementReq = document.getElementById("elementReq");
+const btnResistes = document.getElementById("btnResist");
 
+function sumar(e) {
+  e.preventDefault();
 
+  let valor1 = parseInt(resistencia1.value);
+  let valor2 = parseInt(resistencia2.value);
+  let suma = valor1 + valor2;
+  let multiplicacion = valor1 * valor2;
 
+  let resultadoFinal = multiplicacion / suma;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  elementReq.innerHTML = `la suma es ${suma}, la multiplication ${multiplicacion},  el resultado de resistencia equivalente es ${resultadoFinal}`;
+}
+btnResistes.addEventListener("click", sumar);
