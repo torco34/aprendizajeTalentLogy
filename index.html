@@ -13,10 +13,14 @@
     <title>TalentLogy</title>
   </head>
   <body>
-    <header>
-      <h1>Ejercicios de Variables</h1>
+    <header class="container">
+      <h3>TalentLogy</h3>
     </header>
     <!-- Primer ejercicio  -->
+    <br />
+    <div class="container text-center">
+      <h2>Ejercicios de Variables</h2>
+    </div>
     <div class="container border p-5">
       <h2 class="text-success">Primer Ejercicio</h2>
       <p>
@@ -121,16 +125,40 @@
         <div>
           <input id="resistencia1" type="text" />
           <input id="resistencia2" type="text" />
-          <button id="btnResist">Calcular</button>
+          <button id="btnResist" class="btn btn-primary">Calcular</button>
         </div>
       </form>
       <br />
       <p class="text-primary">Resultado...</p>
-      <div id="elementReq" class="border">...</div>
+      <div id="elementReq" class="border border-primary">...</div>
     </div>
     <br />
     <br />
     <br />
+
+    <div class="container">
+      <h2>Cuál es la diferencia entre una variable y una constante?</h2>
+      <p>
+        La variable <span class="text-danger">var</span> pude ser modificadas y
+        re-declaradas dentro de su ámbito
+      </p>
+
+      <p>
+        La variable <span class="text-info">let</span> pueden ser modificadas,
+        pero no re-declaradas;
+      </p>
+
+      <p>
+        las variables <span class="text-primary">const</span> no pueden ser
+        modificadas ni re-declaradas.
+      </p>
+    </div>
+
+    <br />
+    <br />
+    <div class="container">
+      <h2>¿Cuándo se deberían usar ?</h2>
+    </div>
     <footer class="bg-dark m-100 h-100">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et excepturi
