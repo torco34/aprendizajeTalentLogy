@@ -48,63 +48,25 @@ function calculateChange(e) {
 button.addEventListener("click", calculateChange);
 
 // CUARTO EJERCICIO
-// const num1 = document.getElementById("num1");
-// const num2 = document.getElementById("num2");
-// const num3 = document.getElementById("num3");
-// const num4 = document.getElementById("btnMedia");
+
 const numeros = document.getElementsByClassName("num1");
 const btnMedia = document.getElementById("btnMedia");
+const elementMedia = document.getElementById("elementMedia");
 
-// console.log(numeros[]);
-// for (pro in numeros) {
-//   console.log(numeros[2].value);
-// }
-// function media(e) {
-//   e.preventDefault();
-//   let num1 = numeros;
-//   let suma1 = num1[0].value;
-//   console.log(suma1);
-//   console.log(num1[0].value);
-// }
-// let num1 = numeros;
-// let suma1 = num1[0].value;
-// console.log(suma1);
-// console.log(num1[0].value);s
-for (let i = 0; i <= numeros; i++) {
-  console.log(numeros);
-}
-
-function media(e) {
+function imprimirMedia(e) {
   e.preventDefault();
-  let suma = 0;
-  for (let i = 0; i < 4; i++) {
-    const numero = prompt("Ingresa numero");
-    suma = suma + parseInt(numero);
-    console.log(suma);
-    // const element = arra{y[};
-  }
-  console.log(suma);
-  // for (pro in numeros) {
-  //   let sum1 = numeros[0].value;
-  //   let sum2 = numeros[1].value;
-  //   let sum3 = numeros[2].value;
-  //   let sum4 = numeros[3].value;
-  //   let sumatotal = sum1 + sum2;
+  let sum1 = parseInt(numeros[0].value);
+  let sum2 = parseInt(numeros[1].value);
+  let sum3 = parseInt(numeros[2].value);
+  let sum4 = parseInt(numeros[3].value);
 
-  //   console.log(sumatotal);
+  const sumaTotal = sum1 + sum2 + sum3 + sum4;
+  let media = sumaTotal / 4;
 
-  //   console.log(sum1, sum2, sum3, sum4);
-  // }
+  elementMedia.innerHTML = `La media es la ${media}, la suma de los cuatro numero es ${sumaTotal}`;
 }
 
-btnMedia.addEventListener("click", media);
-
-// console.log(numeros);
-// let resultadoSuma = num1 + num2;
-// let resultadoSuma2 = num3 + num2;
-// resulTotal = resultadoSuma + resultadoSuma2;
-// const resultadoFinal = resulTotal / 3;
-// console.log(resultadoFinal);
+btnMedia.addEventListener("click", imprimirMedia);
 
 //  QUINTO EJERCICIO
 const resistencia1 = document.getElementById("resistencia1");
@@ -122,6 +84,6 @@ function sumar(e) {
 
   let resultadoFinal = multiplicacion / suma;
 
-  elementReq.innerHTML = `la suma es ${suma}, la multiplication ${multiplicacion},  el resultado de resistencia equivalente es ${resultadoFinal}`;
+  elementReq.innerHTML = ` la multiplication ${multiplicacion} la suma es ${suma},  el resultado de resistencia equivalente es ${resultadoFinal}`;
 }
 btnResistes.addEventListener("click", sumar);
