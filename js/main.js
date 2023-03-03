@@ -56,13 +56,45 @@ const numeros = document.getElementsByClassName("num1");
 const btnMedia = document.getElementById("btnMedia");
 
 // console.log(numeros[]);
-for (let i = 0; i > numeros.length; i++) {
-  console.log([i]);
+// for (pro in numeros) {
+//   console.log(numeros[2].value);
+// }
+// function media(e) {
+//   e.preventDefault();
+//   let num1 = numeros;
+//   let suma1 = num1[0].value;
+//   console.log(suma1);
+//   console.log(num1[0].value);
+// }
+// let num1 = numeros;
+// let suma1 = num1[0].value;
+// console.log(suma1);
+// console.log(num1[0].value);s
+for (let i = 0; i <= numeros; i++) {
+  console.log(numeros);
 }
+
 function media(e) {
   e.preventDefault();
-  let numeross = numeros;
-  console.log(numeross[2].value);
+  let suma = 0;
+  for (let i = 0; i < 4; i++) {
+    const numero = prompt("Ingresa numero");
+    suma = suma + parseInt(numero);
+    console.log(suma);
+    // const element = arra{y[};
+  }
+  console.log(suma);
+  // for (pro in numeros) {
+  //   let sum1 = numeros[0].value;
+  //   let sum2 = numeros[1].value;
+  //   let sum3 = numeros[2].value;
+  //   let sum4 = numeros[3].value;
+  //   let sumatotal = sum1 + sum2;
+
+  //   console.log(sumatotal);
+
+  //   console.log(sum1, sum2, sum3, sum4);
+  // }
 }
 
 btnMedia.addEventListener("click", media);
