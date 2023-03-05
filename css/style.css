@@ -16,7 +16,13 @@ html {
 .containerHeader {
   background-color: azure;
 }
-.containerHeader ul li {
+.containerHeader ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid red 2px;
+}
+.containerHeader ul li a {
   display: flex;
 }
 /* botones desplazamiento */
