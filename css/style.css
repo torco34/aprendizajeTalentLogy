@@ -19,3 +19,35 @@ html {
 .containerHeader ul li {
   display: flex;
 }
+/* botones desplazamiento */
+.btnsle {
+  position: fixed;
+  width: 8rem;
+}
+.btnsle ul li {
+  display: grid;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  width: 55px;
+  height: 50px;
+  margin: auto 0;
+  text-align: center;
+  border: transparent;
+  margin-top: 1rem;
+  background-color: aquamarine;
+  border: solid rgb(201, 118, 85) 2px;
+}
+
+.btnsle ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(201, 118, 85);
+}
+.btnsle ul li.active {
+  background-color: rgb(221, 235, 230);
+}
+
+.btnsle ul li:hover {
+  background-color: rgb(221, 235, 230);
+}
