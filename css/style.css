@@ -14,16 +14,33 @@ html {
 
 /* secction header */
 .containerHeader {
-  background-color: azure;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  background-color: rgb(41, 43, 43);
 }
+.containerHeader .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerHeader .logo h3 {
+  color: rgb(252, 249, 249);
+}
+
 .containerHeader ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid red 2px;
+  text-decoration: none;
+  list-style: none;
 }
+
 .containerHeader ul li a {
   display: flex;
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: rgb(245, 240, 240);
 }
 /* botones desplazamiento */
 .btnsle {

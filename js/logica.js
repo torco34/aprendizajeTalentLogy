@@ -18,3 +18,18 @@ function pedirNumero() {
 }
 
 btnOne.addEventListener("click", pedirNumero);
+
+//  SEGUNDO EJERCICIO DE LOGICA
+const celsius = 32;
+function converFahrenheitACelsius(celsius) {
+  let resultado = (celsius * 9) / 5.0 + 32;
+  return resultado;
+}
+function convertCelsiusAFahrenheit(fahrenheit) {
+  let resultado = fahrenheit + (32 / 5.0) * 9;
+  return resultado;
+}
+
+let resultado = convertCelsiusAFahrenheit(celsius);
+
+console.log(`resultado ${celsius} 0C  = ${resultado} 0F`);
