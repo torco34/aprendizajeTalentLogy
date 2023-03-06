@@ -52,3 +52,17 @@ function CalcularHipotenusa() {
 }
 
 catetos.addEventListener("click", CalcularHipotenusa);
+
+// CUARTO EJERCICIO DE LOGICA
+// Hacer un Programa que calcule longitudes de Circunferencia.
+
+function circunferencia(radio) {
+  let circulo = 2 * Math.PI * radio;
+  console.log(`Circuferencia ${circulo}`);
+}
+function longitud(radio) {
+  let area = Math.PI * Math.pow(radio, 2);
+  console.log(`longitud ${area}`);
+}
+longitud(4);
+circunferencia(4);
