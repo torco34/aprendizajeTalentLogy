@@ -104,3 +104,19 @@ function descuento() {
   console.log(compraFinal);
 }
 descuento();
+
+// OCTAVO EJERCICIO DE LOGICA
+// Dadas las horas trabajadas de una persona y el valor por hora. Calcular su salario e imprimirlo.
+
+function calcularSalario() {
+  let horasTrabajadas = 8;
+  let valorHoras = 20;
+  let diasMes = 20;
+  valorDia = horasTrabajadas * valorHoras;
+  salariMes = valorDia * diasMes;
+  console.log(valorDia);
+  console.log(salariMes);
+}
+calcularSalario();
+
+// NOVENO EJERCICIO DE LOGICA
