@@ -38,7 +38,7 @@ console.log(`resultado de ${celsius} 0C es = ${resultado} 0F`);
 
 // Sacar la hipotenusa de un triángulo rectángulo, pidiendo al usuario el valor de los 2 catetos.
 const catetos = document.getElementById("catetos");
-function CalcularHipotenusa() {
+function calcularHipotenusa() {
   let cateto1 = prompt("Ingresa cateto 1");
   let cateto2 = prompt("Ingresa catetos 2");
   let a = Math.pow(cateto1, 2);
@@ -51,7 +51,7 @@ function CalcularHipotenusa() {
   );
 }
 
-catetos.addEventListener("click", CalcularHipotenusa);
+catetos.addEventListener("click", calcularHipotenusa);
 
 // CUARTO EJERCICIO DE LOGICA
 // Hacer un Programa que calcule longitudes de Circunferencia.
@@ -66,3 +66,15 @@ function longitud(radio) {
 }
 longitud(4);
 circunferencia(4);
+// QUINTO EJERCICIO DE LOGICA
+//  Hacer un Programa que calcule áreas de trapecios.
+const btnTrapecio = document.getElementById("btnTrapecio");
+function calcularAreaTrapecio() {
+  let numeroMax = prompt("Ingresa numero mas grade");
+  let numeroMin = prompt("Ingresa numero mas pequeno");
+  let altura = prompt("Ingresa altura");
+
+  let area = (parseInt(numeroMax) + parseInt(numeroMin) / 2) * parseInt(altura);
+  console.log(`El area del trapecio es ${area}`);
+}
+btnTrapecio.addEventListener("click", calcularAreaTrapecio);
