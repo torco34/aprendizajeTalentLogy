@@ -5,18 +5,25 @@
 }
 
 body {
-  background-color: aliceblue;
+  background-color: #ffffff00;
   font-size: 2rem;
 }
 html {
   font-size: 62.5%;
 }
-
+.paletas {
+  background-color: #f5576c00;
+  color: #f5576c8a;
+  background-color: #f5576cd9;
+}
 /* secction header */
 .containerHeader {
+  position: fixed;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   background-color: rgb(41, 43, 43);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .containerHeader .logo {
   display: flex;
@@ -42,6 +49,13 @@ html {
   font-size: 1.5rem;
   color: rgb(245, 240, 240);
 }
+.containerHeader ul li a.actives {
+  color: #f5576cd9;
+}
+
+.containerHeader ul li a:hover {
+  color: #f5576cd9;
+}
 /* botones desplazamiento */
 .btnsle {
   position: fixed;
@@ -57,8 +71,9 @@ html {
   margin: auto 0;
   text-align: center;
   border: transparent;
+
   margin-top: 1rem;
-  background-color: aquamarine;
+  background-color: #f5576cd9;
   border: solid rgb(201, 118, 85) 2px;
 }
 
@@ -66,11 +81,12 @@ html {
   text-decoration: none;
   font-size: 1.5rem;
   color: rgb(201, 118, 85);
+  color: #000;
 }
 .btnsle ul li.active {
-  background-color: rgb(221, 235, 230);
+  background-color: #fff;
 }
 
 .btnsle ul li:hover {
-  background-color: rgb(221, 235, 230);
+  background-color: #fff;
 }

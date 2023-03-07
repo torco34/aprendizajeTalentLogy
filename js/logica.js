@@ -79,7 +79,7 @@ function calcularAreaTrapecio() {
 }
 btnTrapecio.addEventListener("click", calcularAreaTrapecio);
 
-// SEXTO EJERCICIO
+// SEXTO EJERCICIO de logica
 
 // Calcule la media aritmética de 3 números cualesquiera.
 const btnArismet = document.getElementById("btnArismet");
@@ -92,3 +92,15 @@ function calcularMedia() {
   console.log(resultadoDivicion);
 }
 btnArismet.addEventListener("click", calcularMedia);
+
+// SÉPTIMO EJERCICIO DE LOGICA
+//  Una tienda ofrece un descuento del 15% sobre el total de la compra y un
+// cliente desea saber cuánto deberá pagar finalmente por su compra.
+function descuento() {
+  let compraSinDescuento = 300;
+  let descuento = 15;
+  const compraFinal =
+    compraSinDescuento - (descuento * compraSinDescuento) / 100;
+  console.log(compraFinal);
+}
+descuento();
