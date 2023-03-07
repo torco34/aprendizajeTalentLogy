@@ -78,3 +78,17 @@ function calcularAreaTrapecio() {
   console.log(`El area del trapecio es ${area}`);
 }
 btnTrapecio.addEventListener("click", calcularAreaTrapecio);
+
+// SEXTO EJERCICIO
+
+// Calcule la media aritmética de 3 números cualesquiera.
+const btnArismet = document.getElementById("btnArismet");
+function calcularMedia() {
+  const num1 = parseInt(prompt("num1"));
+  const num2 = parseInt(prompt("num2"));
+  const num3 = parseInt(prompt("num3"));
+  sumaArismetic = num1 + num2 + num3;
+  resultadoDivicion = sumaArismetic / 3;
+  console.log(resultadoDivicion);
+}
+btnArismet.addEventListener("click", calcularMedia);
