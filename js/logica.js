@@ -101,12 +101,12 @@ function descuento() {
   let descuento = 15;
   const compraFinal =
     compraSinDescuento - (descuento * compraSinDescuento) / 100;
-  console.log(compraFinal);
+  // console.log(compraFinal);
 }
 descuento();
 
 // OCTAVO EJERCICIO DE LOGICA
-// Dadas las horas trabajadas de una persona y el valor por hora. Calcular su salario e imprimirlo.
+// Dadas las horas trabajadas de una persona y el valor por hora. Calcular su salario e imprimis.
 
 function calcularSalario() {
   let horasTrabajadas = 8;
@@ -114,9 +114,19 @@ function calcularSalario() {
   let diasMes = 20;
   valorDia = horasTrabajadas * valorHoras;
   salariMes = valorDia * diasMes;
-  console.log(valorDia);
-  console.log(salariMes);
+  // console.log(valorDia);
+  // console.log(salariMes);
 }
 calcularSalario();
 
 // NOVENO EJERCICIO DE LOGICA
+
+// Calcular el nuevo salario de un obrero, si obtuvo un incremento del 25% sobre su salario anterior.
+
+function calcularNuevoSalaro(salario, incremento, nuevoSalario) {
+  incremento = salario * 0.25;
+  nuevoSalario = salario + incremento;
+  // console.log(incremento);
+  // console.log(nuevoSalario);
+}
+calcularNuevoSalaro(200);
