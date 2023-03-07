@@ -130,3 +130,14 @@ function calcularNuevoSalaro(salario, incremento, nuevoSalario) {
   // console.log(nuevoSalario);
 }
 calcularNuevoSalaro(200);
+
+// DÉCIMO EJERCICIO DE LOGICA
+// Comprobar a través de un programa si un alumno aprobó o no un examen (Aprueba si su nota es mayor a 10.5).
+
+let notaFinal = 12;
+
+if (notaFinal > 10.5) {
+  console.log("Aprobó");
+} else {
+  console.log("Reaprobo");
+}
