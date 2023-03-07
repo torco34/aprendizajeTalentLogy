@@ -137,7 +137,19 @@ calcularNuevoSalaro(200);
 let notaFinal = 12;
 
 if (notaFinal > 10.5) {
-  console.log("Aprobó");
+  // console.log("Aprobó");
 } else {
-  console.log("Reaprobo");
+  // console.log("Reaprobo");
+}
+
+// ONCE EJERCICIO
+// Comprobar si un número digitado por el usuario es positivo o negativo.
+
+const numero = -2;
+if (numero > 0) {
+  console.log(` El numero ${numero}, es positivo`);
+} else if (numero === 0) {
+  console.log(`El  numero ${numero}, es neutro`);
+} else {
+  console.log(`El numero ${numero}, es negativo`);
 }
