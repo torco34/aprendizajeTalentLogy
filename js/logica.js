@@ -197,3 +197,16 @@ function knowIfPar() {
 }
 
 btnPar.addEventListener("click", knowIfPar);
+// 14 EJERCICIO DE LOGICA
+// Calcular el mayor de dos números leídos del teclado y visualizarlo en pantalla
+const btnCalcular = document.getElementById("btnCalcular");
+function calcularDosNumeros() {
+  const numero1 = prompt("Ingresar numero 1");
+  const numero2 = prompt("Ingresar numero 2");
+  if (numero1 > numero2) {
+    console.log(`numero ${numero1} es mayor`);
+  } else {
+    console.log(`El numero es ${numero2} Mayor`);
+  }
+}
+btnCalcular.addEventListener("click", calcularDosNumeros);
