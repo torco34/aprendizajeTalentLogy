@@ -19,7 +19,7 @@ function pedirNumero() {
 
 btnOne.addEventListener("click", pedirNumero);
 
-//  SEGUNDO EJERCICIO DE LOGICA
+//  2 EJERCICIO DE LOGICA
 const celsius = 32;
 function convertirFahrenheitACelsius(celsius) {
   let resultado = (celsius * 9) / 5.0 + 32;
@@ -34,7 +34,7 @@ let resultado = convertirCelsiusAFahrenheit(celsius);
 
 console.log(`resultado de ${celsius} 0C es = ${resultado} 0F`);
 
-// TERCER EJERCICIO DE LOGICA
+// 3 EJERCICIO DE LOGICA
 
 // Sacar la hipotenusa de un triángulo rectángulo, pidiendo al usuario el valor de los 2 catetos.
 const catetos = document.getElementById("catetos");
@@ -66,7 +66,7 @@ function longitud(radio) {
 }
 longitud(4);
 circunferencia(4);
-// QUINTO EJERCICIO DE LOGICA
+// 5 EJERCICIO DE LOGICA
 //  Hacer un Programa que calcule áreas de trapecios.
 const btnTrapecio = document.getElementById("btnTrapecio");
 function calcularAreaTrapecio() {
@@ -75,11 +75,11 @@ function calcularAreaTrapecio() {
   let altura = prompt("Ingresa altura");
 
   let area = (parseInt(numeroMax) + parseInt(numeroMin) / 2) * parseInt(altura);
-  console.log(`El area del trapecio es ${area}`);
+  // console.log(`El area del trapecio es ${area}`);
 }
 btnTrapecio.addEventListener("click", calcularAreaTrapecio);
 
-// SEXTO EJERCICIO de logica
+// 6 EJERCICIO de logica
 
 // Calcule la media aritmética de 3 números cualesquiera.
 const btnArismet = document.getElementById("btnArismet");
@@ -89,11 +89,11 @@ function calcularMedia() {
   const num3 = parseInt(prompt("num3"));
   sumaArismetic = num1 + num2 + num3;
   resultadoDivicion = sumaArismetic / 3;
-  console.log(resultadoDivicion);
+  // console.log(resultadoDivicion);
 }
 btnArismet.addEventListener("click", calcularMedia);
 
-// SÉPTIMO EJERCICIO DE LOGICA
+// 7 EJERCICIO DE LOGICA
 //  Una tienda ofrece un descuento del 15% sobre el total de la compra y un
 // cliente desea saber cuánto deberá pagar finalmente por su compra.
 function descuento() {
@@ -105,7 +105,7 @@ function descuento() {
 }
 descuento();
 
-// OCTAVO EJERCICIO DE LOGICA
+// 8 EJERCICIO DE LOGICA
 // Dadas las horas trabajadas de una persona y el valor por hora. Calcular su salario e imprimis.
 
 function calcularSalario() {
@@ -119,7 +119,7 @@ function calcularSalario() {
 }
 calcularSalario();
 
-// NOVENO EJERCICIO DE LOGICA
+// 9 EJERCICIO DE LOGICA
 
 // Calcular el nuevo salario de un obrero, si obtuvo un incremento del 25% sobre su salario anterior.
 
@@ -210,3 +210,17 @@ function calcularDosNumeros() {
   }
 }
 btnCalcular.addEventListener("click", calcularDosNumeros);
+
+// 15 EJERCICIO DE  LOGICA
+// Ingrese un número y calcule e imprima su raíz cuadrada.
+// Si el número es negativo  imprima el número y un mensaje
+// que diga “tiene raíz imaginaria”.
+
+const numeroIngresado = prompt("ingresar par ver raiz");
+let numeroNegetive = 0;
+
+if (numeroIngresado > numeroNegetive) {
+  console.log(Math.sqrt(numeroIngresado));
+} else {
+  console.log(`El numero ${numeroIngresado} tine raiz imaginaria`);
+}
