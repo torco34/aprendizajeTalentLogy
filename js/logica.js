@@ -215,12 +215,31 @@ btnCalcular.addEventListener("click", calcularDosNumeros);
 // Ingrese un número y calcule e imprima su raíz cuadrada.
 // Si el número es negativo  imprima el número y un mensaje
 // que diga “tiene raíz imaginaria”.
+/////////////////////////////////
+///////////////////////////
 
-const numeroIngresado = prompt("ingresar par ver raiz");
-let numeroNegetive = 0;
+// const numeroIngresado = prompt("ingresar par ver raiz");
+// let numeroNegetive = 0;
 
-if (numeroIngresado > numeroNegetive) {
-  console.log(Math.sqrt(numeroIngresado));
+// if (numeroIngresado > numeroNegetive) {
+//   console.log(Math.sqrt(numeroIngresado));
+// } else {
+//   console.log(`El numero ${numeroIngresado} tine raiz imaginaria`);
+// }
+//////////////////////////////////////
+//////////////////////////////////////
+// 16 EJERCICIO DE LOGICA
+// Ingresar por teclado el nombre y el signo de cualquier
+// persona e imprima, el nombre sólo si la persona es signo
+// Aries, caso contrario imprima no es signo Aries.
+
+const nombre = prompt("Ingresa nombre");
+const signo = prompt("Ingresa Signo");
+
+let miSigno = "aries";
+
+if (signo === miSigno) {
+  console.log(`${nombre} tu signo es ${signo}`);
 } else {
-  console.log(`El numero ${numeroIngresado} tine raiz imaginaria`);
+  console.log("No es signo Aries");
 }
