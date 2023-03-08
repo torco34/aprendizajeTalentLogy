@@ -131,29 +131,34 @@ function calcularNuevoSalaro(salario, incremento, nuevoSalario) {
 }
 calcularNuevoSalaro(200);
 
-// DÉCIMO EJERCICIO DE LOGICA
+// 10 EJERCICIO DE LOGICA
 // Comprobar a través de un programa si un alumno aprobó o no un examen (Aprueba si su nota es mayor a 10.5).
+const btnNota = document.getElementById("btnNota");
 
-let notaFinal = 12;
-
-if (notaFinal > 10.5) {
-  // console.log("Aprobó");
-} else {
-  // console.log("Reaprobo");
+function knowNote() {
+  let noteFinish = prompt("Ingresar nota");
+  if (noteFinish > 10.5) {
+    console.log("Aprobó");
+  } else {
+    console.log("Reaprobo");
+  }
 }
 
+btnNota.addEventListener("click", knowNote);
 // 11 EJERCICIO DE LOGICA
 // Comprobar si un número digitado por el usuario es positivo o negativo.
+const btnPositive = document.getElementById("btnPositive");
 
-const numero = -2;
-if (numero > 0) {
-  console.log(` El numero ${numero}, es positivo`);
-} else if (numero === 0) {
-  console.log(`El  numero ${numero}, es neutro`);
-} else {
-  console.log(`El numero ${numero}, es negativo`);
+function knowNumber() {
+  const numero = prompt("ingresar numero");
+  if (numero > 0) {
+    console.log(` El numero ${numero}, es positivo`);
+  } else {
+    console.log(`El numero ${numero}, es negativo`);
+  }
 }
 
+btnPositive.addEventListener("click", knowNumber);
 // 12 EJERCICIO DE LOGICA
 // Visualizar la tarifa de la luz según el gasto de corriente
 //  eléctrica. Para un gasto  menor de 1.000Kwxh la tarifa es 1.2,
@@ -161,14 +166,34 @@ if (numero > 0) {
 
 // DATOS
 
-let tarifa1 = 1.2;
-let tarifa2 = 1.0;
-let tarifa3 = 0.9;
-const gasto = prompt("Ingresar gasto eletrico");
-if (gasto < 1000) {
-  console.log(tarifa1);
-} else if (gasto > 1000 && gasto < 1800) {
-  console.log(tarifa2);
-} else {
-  console.log(tarifa3);
+const btnTarifa = document.getElementById("btnTarifa");
+function knowTafifa() {
+  let tarifa1 = 1.2;
+  let tarifa2 = 1.0;
+  let tarifa3 = 0.9;
+  const gasto = prompt("Ingresar gasto eletrico");
+  if (gasto < 1000) {
+    console.log(tarifa1);
+  } else if (gasto > 1000 && gasto < 1800) {
+    console.log(tarifa2);
+  } else {
+    console.log(tarifa3);
+  }
 }
+
+btnTarifa.addEventListener("click", knowTafifa);
+// 13 EJERCICIO DE LOGICA
+// Determinar si un número es par, impar.
+
+const btnPar = document.getElementById("btnPar");
+function knowIfPar() {
+  let numeros = prompt("Ingresar numero");
+
+  if (numeros % 2 === 0) {
+    console.log(`El ${numeros} es par`);
+  } else {
+    console.log(`El ${numeros} es impar`);
+  }
+}
+
+btnPar.addEventListener("click", knowIfPar);
