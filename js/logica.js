@@ -142,7 +142,7 @@ if (notaFinal > 10.5) {
   // console.log("Reaprobo");
 }
 
-// ONCE EJERCICIO
+// 11 EJERCICIO DE LOGICA
 // Comprobar si un número digitado por el usuario es positivo o negativo.
 
 const numero = -2;
@@ -152,4 +152,23 @@ if (numero > 0) {
   console.log(`El  numero ${numero}, es neutro`);
 } else {
   console.log(`El numero ${numero}, es negativo`);
+}
+
+// 12 EJERCICIO DE LOGICA
+// Visualizar la tarifa de la luz según el gasto de corriente
+//  eléctrica. Para un gasto  menor de 1.000Kwxh la tarifa es 1.2,
+//  entre 1.OOO y 1.850Kwxh es 1.0 y mayor de  1.85OKwxh 0.9.
+
+// DATOS
+
+let tarifa1 = 1.2;
+let tarifa2 = 1.0;
+let tarifa3 = 0.9;
+const gasto = prompt("Ingresar gasto eletrico");
+if (gasto < 1000) {
+  console.log(tarifa1);
+} else if (gasto > 1000 && gasto < 1800) {
+  console.log(tarifa2);
+} else {
+  console.log(tarifa3);
 }
