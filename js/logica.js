@@ -53,7 +53,7 @@ function calcularHipotenusa() {
 
 catetos.addEventListener("click", calcularHipotenusa);
 
-// CUARTO EJERCICIO DE LOGICA
+//  EJERCICIO 4 DE LOGICA
 // Hacer un Programa que calcule longitudes de Circunferencia.
 
 function circunferencia(radio) {
@@ -151,7 +151,7 @@ const btnPositive = document.getElementById("btnPositive");
 
 function knowNumber() {
   const numero = prompt("ingresar numero");
-  if (numero > 0) {
+  if (numero >= 0) {
     console.log(` El numero ${numero}, es positivo`);
   } else {
     console.log(`El numero ${numero}, es negativo`);
@@ -233,13 +233,95 @@ btnCalcular.addEventListener("click", calcularDosNumeros);
 // persona e imprima, el nombre sólo si la persona es signo
 // Aries, caso contrario imprima no es signo Aries.
 
-const nombre = prompt("Ingresa nombre");
-const signo = prompt("Ingresa Signo");
+// const nombre = prompt("Ingresa nombre");
+// const signo = prompt("Ingresa Signo");
 
-let miSigno = "aries";
+// let miSigno = "aries";
 
-if (signo === miSigno) {
-  console.log(`${nombre} tu signo es ${signo}`);
-} else {
-  console.log("No es signo Aries");
+// if (signo === miSigno) {
+//   console.log(`${nombre} tu signo es ${signo}`);
+// } else {
+//   console.log("No es signo Aries");
+// }
+
+// //////////////////////////////////////////
+// ///////////////////////////
+// EJERCICIO 17 DE LOGICA
+
+// Ingresar por teclado el nombre, la edad y el sexo de cualquier persona e
+// imprima, solo si la persona es de sexo masculino y mayor de edad, el
+// nombre de la persona.
+
+// function masculino() {
+//   let nombre = prompt(" ingreso nombre");
+//   let edadIngresada = prompt("ingresar edad");
+//   let sexoIngresado = prompt("ingresar el sexo");
+
+//   let edadMayor = 18;
+
+//   let sexo2 = "masculino";
+//   if (edadIngresada >= edadMayor && sexoIngresado === sexo2) {
+//     console.log(
+//       `Hola ${nombre} tu eded es ${edadIngresada}  y eres ${sexoIngresado}`
+//     );
+//   } else {
+//     console.log(`Hola ${nombre} no calificas`);
+//   }
+// }
+// masculino();
+// EJERCICIO 18  DE LOGICA
+/*
+Una distribuidora de motocicletas tiene una promoción de fin de año qué consiste 
+en lo siguiente. Las motos marca Honda tienen un descuento del 5%, las marcas Yamaha
+del 8% y las Suzuki del 10%, las otras marcas 2%
+*/
+// DATOS
+// motoHonda = "5%"
+// motoYamaha = "8%"
+// motoSuzuki = "10%"
+
+function motocicletas() {
+  let precioBruto = parseInt(prompt("ingresar precio"));
+
+  let descuentoHonda = 5;
+  const precioDescuento = precioBruto - (descuentoHonda * precioBruto) / 100;
+  console.log(precioDescuento);
+
+  let descuentoYamaha = 8;
+
+  const precioDescuentoYama =
+    precioBruto - (descuentoYamaha * precioBruto) / 100;
+  console.log("hamaha", precioDescuentoYama);
+
+  let descuentoSuzuki = 10;
+  const precioDescuentoSuzuki =
+    precioBruto - (descuentoSuzuki * precioBruto) / 100;
+  console.log(precioDescuentoSuzuki);
+  let descuentoOtros = 2;
+
+  const precioDescuentoOtros =
+    precioBruto - (descuentoOtros * precioBruto) / 100;
+  let marca = prompt("ingresar marca");
+  switch (marca) {
+    case "honda":
+      console.log(`El precio de la Honda con descuento ${precioDescuento}`);
+
+      break;
+    case "yamaha":
+      console.log(
+        ` El precio de la Yamaha con descuento ${precioDescuentoYama}`
+      );
+      break;
+    case "suzuki":
+      console.log(
+        `El precio de la Suzuki con descuento ${precioDescuentoSuzuki}`
+      );
+      break;
+    case "otras":
+      console.log(`Otras marcas ${precioDescuentoOtros}`);
+      break;
+    default:
+      break;
+  }
 }
+motocicletas();
