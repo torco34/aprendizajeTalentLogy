@@ -16,3 +16,18 @@ const preguntaUsuario = () => {
 };
 
 btnPregunta.addEventListener("click", preguntaUsuario);
+
+// 2 EJERCICIO DE CONDICIONALES
+// Determinar la naturaleza par o impar de un número.
+const saberParImpar = () => {
+  let number1 = prompt("Ingresar n1");
+  let number2 = prompt("Ingresar n2");
+  if (number1 % 2 === 0 && number2 != 0) {
+    console.log(`${number1} es  numero  par y ${number2} es numero impar`);
+  } else if (number2 % 2 === 0 && number1 != 0) {
+    console.log(`${number2} es  numero  par y ${number1} es numero impar`);
+  } else {
+    console.log(`No ingresaste los numeros `);
+  }
+};
+saberParImpar();
