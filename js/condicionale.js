@@ -58,4 +58,18 @@ const numMayor = () => {
     console.log(`No ingresaste numeros `);
   }
 };
+//  5 EJERCICIO DE CONDICIONES
+// Pedir una calificación  de 0 a 10 y mostrar de la siguiente manera: Insuficiente, Suficiente, Bien, Excelente
 
+const calificacion = () => {
+  let calificaEstudiante = prompt("Ingresar calificacion");
+  if (calificaEstudiante <= 5) {
+    console.log(`${calificaEstudiante} es insuficiente`);
+  } else if (calificaEstudiante > 5 && calificaEstudiante <= 6) {
+    console.log(`${calificaEstudiante} es suficiente`);
+  } else if (calificaEstudiante > 6 && calificaEstudiante <= 8) {
+    console.log(`${calificaEstudiante} es bien`);
+  } else {
+    console.log(`${calificaEstudiante} es excelente`);
+  }
+};
