@@ -30,4 +30,15 @@ const saberParImpar = () => {
     console.log(`No ingresaste los numeros `);
   }
 };
-saberParImpar();
+// 3 EJERCICIO DE CONDICIONALES
+// Pedir dos números y decir si non múltiplos o no
+
+const multiplos = () => {
+  let number1 = prompt("Ingresar n1");
+  let number2 = prompt("Ingresar n2");
+  if (number1 % number2 === 0) {
+    console.log(`Son múltiplos ${number1} y ${number2}`);
+  } else {
+    console.log(`No son múltiplos ${number1} y ${number2}`);
+  }
+};
