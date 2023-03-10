@@ -33,7 +33,7 @@ const saberParImpar = () => {
 // 3 EJERCICIO DE CONDICIONALES
 // Pedir dos números y decir si non múltiplos o no
 
-const multiplos = () => {
+const multipleNumbers = () => {
   let number1 = prompt("Ingresar n1");
   let number2 = prompt("Ingresar n2");
   if (number1 % number2 === 0) {
@@ -42,3 +42,20 @@ const multiplos = () => {
     console.log(`No son múltiplos ${number1} y ${number2}`);
   }
 };
+
+// 4 EJERCICIO DE CONDICIONALES
+// Pedir dos números y decir cual es el mayor
+
+const numMayor = () => {
+  let number1 = prompt("n1");
+  let number2 = prompt("n2");
+
+  if (number1 > number2) {
+    console.log(`El ${number1} mayor que ${number2} `);
+  } else if (number2 > number1) {
+    console.log(`El ${number2} mayor que ${number1} `);
+  } else {
+    console.log(`No ingresaste numeros `);
+  }
+};
+
