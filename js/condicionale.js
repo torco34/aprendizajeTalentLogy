@@ -73,3 +73,32 @@ const calificacion = () => {
     console.log(`${calificaEstudiante} es excelente`);
   }
 };
+// 6 EJERCICIO DE CONDICIONES
+//  En un videoclub se ofrece la promoción de llevarse tres películas por el precio de las dos
+// más baratas. Haga un programa que, dados los tres precios de las películas, determine la cantidad a pagar.
+
+const videoclub = () => {
+  let p1 = parseInt(prompt("pelicula p1"));
+  let p2 = parseInt(prompt("pelicula p2"));
+  let p3 = parseInt(prompt("pelicula p3"));
+
+  suma1 = p1 + p2;
+  suma2 = p1 + p3;
+  suma3 = p2 + p3;
+  sumaTotal = p1 + p2 + p3;
+
+  if (p1 > p2 && p1 > p3) {
+    console.log(`numero ${p2} y ${p3} uno ${suma3}`);
+  } else if (p2 > p1 && p2 > p3) {
+    console.log(`numero ${p1} y ${p3} uno ${suma2}`);
+  } else if (p3 > p1 && p3 > p2) {
+    console.log(`numero ${p1} y ${p2} uno ${suma1}`);
+  } else if (p1 === p2 && p3) {
+    console.log(
+      `no tiene descuento ${p1} + ${p2} + ${p3} suma total $ ${sumaTotal} `
+    );
+  } else {
+    console.log(`No ingreso los numero`);
+  }
+};
+videoclub();
