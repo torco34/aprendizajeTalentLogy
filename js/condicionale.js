@@ -7,11 +7,11 @@
 const btnPregunta = document.getElementById("btnPregunta");
 const preguntaUsuario = () => {
   const programa = prompt("Eres culpable? o No ");
-  let comparativo = "no";
-  if (programa === comparativo) {
-    console.log(`digiste ${programa}`);
+
+  if (programa === "no") {
+    console.log(`dijiste ${programa}`);
   } else {
-    console.log(`digiste ${programa}, irás a la cárcel»`);
+    console.log(`dijiste ${programa}, irás a la cárcel»`);
   }
 };
 
@@ -73,32 +73,61 @@ const calificacion = () => {
     console.log(`${calificaEstudiante} es excelente`);
   }
 };
-// 6 EJERCICIO DE CONDICIONES
+// 6 EJERCICIO DE CONDICIONALES
 //  En un videoclub se ofrece la promoción de llevarse tres películas por el precio de las dos
 // más baratas. Haga un programa que, dados los tres precios de las películas, determine la cantidad a pagar.
 
 const videoclub = () => {
-  let p1 = parseInt(prompt("pelicula p1"));
-  let p2 = parseInt(prompt("pelicula p2"));
-  let p3 = parseInt(prompt("pelicula p3"));
+  let película1 = parseInt(prompt("película p1"));
+  let película2 = parseInt(prompt("película p2"));
+  let película3 = parseInt(prompt("película p3"));
 
-  suma1 = p1 + p2;
-  suma2 = p1 + p3;
-  suma3 = p2 + p3;
-  sumaTotal = p1 + p2 + p3;
+  suma1 = película1 + película2;
+  suma2 = película1 + película3;
+  suma3 = película2 + película3;
+  sumaTotal = película1 + película2 + película3;
 
-  if (p1 > p2 && p1 > p3) {
-    console.log(`numero ${p2} y ${p3} uno ${suma3}`);
-  } else if (p2 > p1 && p2 > p3) {
-    console.log(`numero ${p1} y ${p3} uno ${suma2}`);
-  } else if (p3 > p1 && p3 > p2) {
-    console.log(`numero ${p1} y ${p2} uno ${suma1}`);
-  } else if (p1 === p2 && p3) {
+  if (película1 > película2 && película1 > película3) {
     console.log(
-      `no tiene descuento ${p1} + ${p2} + ${p3} suma total $ ${sumaTotal} `
+      `Las dos más baratas son ${película2} y ${película3} cantidad a pagar  es:$ ${suma3}`
+    );
+  } else if (película2 > película1 && película2 > película3) {
+    console.log(
+      `Las dos más baratas son ${película1} y ${película3} cantidad a pagar  es: $ ${suma2}`
+    );
+  } else if (película3 > película1 && película3 > película2) {
+    console.log(
+      `Las dos más baratas son ${película1} y ${película2} cantidad a pagar  es: $${suma1}`
+    );
+  } else if (película1 === película2 && película3) {
+    console.log(
+      `Las dos más baratas son ${película1} + ${película2} + ${película3} cantidad a pagar  es: $${sumaTotal} `
     );
   } else {
     console.log(`No ingreso los numero`);
   }
 };
-videoclub();
+// videoclub()
+// 7 EJERCICIO DE CONDICIONALES
+// Escriba un programa que reciba cuatro calificaciones de un estudiante y devuelva el promedio y la máxima y la mínima calificación.
+const calificaciones = () => {
+  let calificacion1 = parseInt(prompt("Calificacion1"));
+  let calificacion2 = parseInt(prompt("Calificacion2"));
+  let calificacion3 = parseInt(prompt("Calificacion3"));
+  let calificacion4 = parseInt(prompt("Calificacion4"));
+
+  let sumaCalificaciones =
+    calificacion1 + calificacion2 + calificacion3 + calificacion4;
+  resultadoFinal = sumaCalificaciones / 4;
+
+  if (resultadoFinal <= 5) {
+    console.log(`Minima ${resultadoFinal}`);
+  } else if (resultadoFinal >= 8) {
+    console.log(`maxima ${resultadoFinal}`);
+  } else if (resultadoFinal > 5 && resultadoFinal < 8) {
+    console.log(`El promedio es ${resultadoFinal}`);
+  } else {
+    console.log(`No ingreso calificacion `);
+  }
+};
+// calificaciones();
