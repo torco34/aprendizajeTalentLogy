@@ -157,20 +157,32 @@ const ingresarNumeros = () => {
   let p1 = parseInt(prompt("p1"));
   let p2 = parseInt(prompt("p2"));
   let p3 = parseInt(prompt("p3"));
+  console.log(`mayor: persona ${p1} ${p2} ${p3}`);
   if (p1 > p2 && p1 > p3) {
-    console.log(`mayor: persona ${p1}`);
+    console.log(`mayor: persona ${p1}  `);
   } else if (p2 > p1 && p2 > p3) {
-    console.log(`mayor: persona ${p2}`);
+    console.log(`mayor: persona  ${p2}  `);
   } else if (p3 > p2 && p3 > p1) {
-    console.log(`mayor: persona ${p3}`);
+    console.log(`mayor: persona  ${p3} `);
   }
+
+  if (p1 < p2 && p2 < p3) {
+    console.log(`medio: persona  ${p2} `);
+  } else if (p1 > p2 && p2 < p3) {
+    console.log(`medio: persona  ${p2} 222`);
+  } else if (p2 > p1 && p1 > p3) {
+    console.log(`medio: persona  ${p1} `);
+  } else if (p2 > p1 && p1 < p3) {
+    console.log(`medio: persona  ${p3} `);
+  }
+ 
   if (p1 < p2 && p1 < p3) {
-    console.log(` menor: persona &{p1}`);
+    console.log(` menor: persona ${p1} `);
     // console.log(` medio: persona ${p2}`);
   } else if (p2 < p1 && p2 < p3) {
     console.log(` menor: persona ${p2}`);
   } else if (p3 < p2 && p3 < p1) {
-    console.log(` menor: persona ${p3}`);
+    console.log(` menor: persona ${p3} `);
   } else {
     console.log(`mayor: persona 1`);
   }
