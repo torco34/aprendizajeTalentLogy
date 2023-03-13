@@ -107,7 +107,9 @@ const videoclub = () => {
     console.log(`No ingreso los numero`);
   }
 };
+
 // videoclub()
+
 // 7 EJERCICIO DE CONDICIONALES
 // Escriba un programa que reciba cuatro calificaciones de un estudiante y devuelva el promedio y la máxima y la mínima calificación.
 const calificaciones = () => {
@@ -131,3 +133,72 @@ const calificaciones = () => {
   }
 };
 // calificaciones();
+
+// 8 EJERCICIO DE CONDICIONALES
+// Realizar un programa que pida tres números y diga cuáles son pares y cuáles impares.
+
+const paresImpar = () => {
+  for (let i = 1; i <= 3; i++) {
+    let n1 = parseInt(prompt("numero1"));
+    if (n1 % 2 === 0 && n1 != 0) {
+      console.log(`${n1} par`);
+    } else {
+      console.log(`${n1} impar`);
+    }
+  }
+};
+// paresImpar();
+
+// 9 EJERCICIO DE CONDICIONALES
+// Realizar un programa que pida tres números y diga cuál es el mayor, cuál es el segundo mayor,
+//  y cuál es el menor. (Mostrar: mayor: persona 1, medio: persona 3, menor: persona 2)
+
+const ingresarNumeros = () => {
+  let p1 = parseInt(prompt("p1"));
+  let p2 = parseInt(prompt("p2"));
+  let p3 = parseInt(prompt("p3"));
+
+  // let mayor = "mayor";
+  // let medio = "medio";
+  // let menor = "menor";
+  // if (p1 === 1 && p2 === 2 && p3 === 3) {
+  //   console.log(` mayor: persona ${p1}`);
+  // } else if (p1 === 3 && p2 === 2 && p3 === 1) {
+  //   console.log(` medio: persona ${p2}`);
+  // } else if (p1 === 2 && p2 === 3 && p3 === 1) {
+  //   console.log(` menor: persona ${p2}`);
+  // }
+
+  // if (p1 === "mayor") {
+  //   console.log(`${p1}: persona  1`);
+  // } else if (p3 === "medio") {
+  //   console.log(`${p3}: persona  3`);
+  // } else {
+  //   console.log(`${p2}: persona  2`);
+  // }
+
+  // if (p1 > p2 && p1 > p3) {
+  //   console.log(`mayor ${p1} seg ${p2} men ${p3} `);
+  // } else if (p2 > p1 && p2 > p3) {
+  //   console.log(`seg${p1} mayor ${p2} ${p3}`);
+  // } else if (p3 > p1 && p3 > p2) {
+  //   console.log(`meno${p1} segM${p2} mayor${p3}`);
+  // } else if (p1 < p2 && p1 < p3) {
+  //   console.log(` no esta bien`);
+  //   console.log(`menor${p1} ${p2} ${p3}`);
+  // } else if (p2 < p1 && p2 < p3) {
+  //   console.log(`${p1} menor${p2} ${p3}`);
+  // } else if (p3 < p2 && p3 < p1) {
+  //   console.log(`${p1} ${p2} meno${p3}`);
+  // }
+  // if (p1 > p2 && p1 > p3) {
+  //   console.log(`mayor: persona  1`);
+  // } else if (p3 > p1 && p3 > p2) {
+  //   console.log(`  medio: persona   3`);
+  // } else if (p3 > p1 && p3 > p2) {
+  //   console.log(` menor: persona 2 `);
+  // } else {
+  //   console.log(` no ingreso numeros ${p2} `);
+  // }
+};
+ingresarNumeros();
