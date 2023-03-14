@@ -157,9 +157,10 @@ const ingresarNumeros = () => {
   let p1 = parseInt(prompt("p1"));
   let p2 = parseInt(prompt("p2"));
   let p3 = parseInt(prompt("p3"));
-  console.log(`mayor: persona ${p1} ${p2} ${p3}`);
+  console.log(`Numeros ingresados ${p1} ${p2} ${p3}`);
+
   if (p1 > p2 && p1 > p3) {
-    console.log(`mayor: persona ${p1}  `);
+    console.log(`mayor: persona.. ${p1}  `);
   } else if (p2 > p1 && p2 > p3) {
     console.log(`mayor: persona  ${p2}  `);
   } else if (p3 > p2 && p3 > p1) {
@@ -168,23 +169,65 @@ const ingresarNumeros = () => {
 
   if (p1 < p2 && p2 < p3) {
     console.log(`medio: persona  ${p2} `);
-  } else if (p1 > p2 && p2 < p3) {
-    console.log(`medio: persona  ${p2} 222`);
+  } else if (p1 > p2 && p2 > p3) {
+    console.log(`medio: persona  ${p2} `);
   } else if (p2 > p1 && p1 > p3) {
     console.log(`medio: persona  ${p1} `);
+  } else if (p2 === p3 && p1 != p2) {
+    console.log(`Tiene dos numero iguales ${p2} ${p2}`);
   } else if (p2 > p1 && p1 < p3) {
     console.log(`medio: persona  ${p3} `);
+  } else if (p1 === p3 && p1 > p2) {
+    console.log(`Tiene dos numeros iguales ${p1}  ..... ${p3} `);
+  } else if (p3 > p1 && p2 < p3) {
+    console.log(`Medio: ${p1} `);
+  } else if (p2 < p1 && p2 < p3) {
+    console.log(`Medio: ${p3} `);
+  } else if (p1 > p2 && p2 < p3) {
+    console.log(`Medio: ${p1}  prueba`);
+  } else if (p1 > p2 && p2 < p3) {
+    console.log(`medio:  ${p3} `);
+  } else if (p1 === p2 && p2 != p3) {
+    console.log(`Tiene dos numero iguales ${p1}  ${p2}`);
+  } else if (p1 === p3 && p1 != p3) {
+    console.log(`Tiene dos numero iguales   ${p1}  ${p3}`);
+  } else if (p1 === p3 && p2 === p3) {
+    // console.log(`Son iguales ${p1} me${p3}`);
+    console.log(`Los tres numeros son iguales`);
+  } else if (p2 === p3) {
+    console.log(`Tiene dos numero iguales   ${p2}  ${p3} `);
+  } else if (p1 === p3 && p2 > p3) {
+    console.log(`Son iguales ${p1} ${p3}`);
   }
- 
+
   if (p1 < p2 && p1 < p3) {
     console.log(` menor: persona ${p1} `);
-    // console.log(` medio: persona ${p2}`);
   } else if (p2 < p1 && p2 < p3) {
     console.log(` menor: persona ${p2}`);
   } else if (p3 < p2 && p3 < p1) {
     console.log(` menor: persona ${p3} `);
   } else {
-    console.log(`mayor: persona 1`);
   }
 };
-ingresarNumeros();
+// ingresarNumeros();
+
+// 10 EJERCICIO DE CONDICIÓN
+// Pida a usuario la edad y el sexo, para que la computadora le indique si ya puede jubilarse.
+//  Tome en cuenta que un Hombre se puede jubilar cuando tenga 60 años o más, en cambio,
+//  una mujer mayor se jubilara si tiene más de 54 años.
+
+const jubilarse = () => {
+  let nombre = prompt("Nombre");
+  let edad = prompt("Edad");
+  let sexo = prompt("El sexo");
+  if (
+    (sexo === "femenina" && edad > 54) ||
+    (sexo === "masculino" && edad >= 60)
+  ) {
+    console.log(`Hola ${nombre} ya te puedes jubilar`);
+  } else {
+    console.log(`Lo siento ${nombre}no te puedes jubilar`);
+  }
+};
+
+// jubilarse();
