@@ -39,3 +39,20 @@ const calcularSuma = () => {
   }
 };
 // calcularSuma();
+
+// EJERCICIO 4
+// Construir un programa que calcule y visualice por pantalla el factorial de todos los valores numéricos enteros entre 1 y 10.
+const factorial = (num) => {
+  // let resultado = prompt("hola");
+  let resultado = num
+  let resultado2 = resultado;//4 , //4//8//24
+  let arr = []
+  for (let i = 1; i < resultado; i++) {
+    resultado2 = resultado2 * i;
+    arr.push(resultado2)
+    console.log(resultado2);
+  }
+  console.log(resultado2);
+  return arr
+};
+console.log(   factorial(5))
