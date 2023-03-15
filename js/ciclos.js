@@ -44,15 +44,31 @@ const calcularSuma = () => {
 // Construir un programa que calcule y visualice por pantalla el factorial de todos los valores numéricos enteros entre 1 y 10.
 const factorial = (num) => {
   // let resultado = prompt("hola");
-  let resultado = num
-  let resultado2 = resultado;//4 , //4//8//24
-  let arr = []
+  let resultado = num;
+  let resultado2 = resultado; //4 , //4//8//24
+  let arr = [];
   for (let i = 1; i < resultado; i++) {
     resultado2 = resultado2 * i;
-    arr.push(resultado2)
+    arr.push(resultado2);
     console.log(resultado2);
+    let arr = [];
   }
   console.log(resultado2);
-  return arr
+  return arr;
 };
-console.log(   factorial(5))
+// console.log(factorial(5));
+
+// Ejercicio 5
+//Escribir un programa que dado un número entero positivo n, calcule la suma de la siguiente serie: 1 + 1/2 + 1/3 + 1/4 + 1/5 + … + 1/n
+const sumaSeries = (n) => {
+  let num = n;
+  let contador = 0;
+  let arr = [];
+  for (let i = 1; i <= n; i++) {
+    resultado = contador + 1 / i;
+    arr.push(resultado);
+  }
+
+  return arr;
+};
+console.log(sumaSeries(5));
