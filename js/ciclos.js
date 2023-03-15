@@ -25,3 +25,17 @@ const contadores = () => {
   }
 };
 // contadores();
+
+// EJERCICIO 3
+// calcular la suma de los primeros cien números con un ciclo.
+const calcularSuma = () => {
+  let contador = 1;
+  let suma = 0;
+  while (contador <= 100) {
+    console.log(` ${contador}`);
+    contador++;
+    suma = suma + contador - 1;
+    console.log(` ${suma}`);
+  }
+};
+// calcularSuma();
