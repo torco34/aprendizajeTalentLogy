@@ -43,7 +43,6 @@ const calcularSuma = () => {
 // EJERCICIO 4
 // Construir un programa que calcule y visualice por pantalla el factorial de todos los valores numéricos enteros entre 1 y 10.
 const factorial = (num) => {
-  // let resultado = prompt("hola");
   let resultado = num;
   let resultado2 = resultado; //4 , //4//8//24
   let arr = [];
@@ -71,4 +70,41 @@ const sumaSeries = (n) => {
 
   return arr;
 };
-console.log(sumaSeries(5));
+// console.log(sumaSeries(5));
+
+// EJERCICIO 6
+// Escribir un programa que calcule los primeros ‘n’
+// números de Fibonacci. Los números de Fibonacci comienzan con 0 y 1, y
+// cada término siguiente es la suma de los anteriores: 0, 1, 2, 3, 5, 8, 13, 21, …
+
+const fibonacci = (numeros) => {
+  const array = [0, 1];
+  let arr = [];
+  for (let i = 2; i < numeros; i++) {
+    array[i] = array[i - 1] + array[i - 2];
+    arr.push(array[i]);
+  }
+  return array;
+};
+// console.log(fibonacci(10));
+
+// EJERCICIO 7
+// Escribir un programa que, dadas 5 notas finales, determine cuántas notas fueron mayores o iguales a 3.0.
+const notasFinales = () => {
+  let contador = 0;
+  let arr = [];
+
+  for (let i = 0; i < 5; i++) {
+    let notas = prompt("Notas");
+    contador = contador + notas.length;
+
+    if (notas >= 3) {
+      console.log(` mayor  `);
+      arr.push(contador[i]);
+    } else {
+      console.log(`menor `);
+      arr.push(contador[i]);
+    }
+  }
+};
+notasFinales();
