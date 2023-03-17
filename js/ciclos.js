@@ -139,7 +139,6 @@ const numeroImpares = (num1, num2) => {
     num1 = num2;
     num2 = num1;
     num2 = num3;
-   
   }
 
   while (num1 <= num2) {
@@ -151,4 +150,22 @@ const numeroImpares = (num1, num2) => {
     num1++;
   }
 };
-numeroImpares(2, 7);
+// numeroImpares(2, 7);
+//EJERCICIO 10
+// Realizar un algoritmo para determinar cuánto ahorrará una persona en
+//  un año, si al final de cada mes deposita cantidades variables de dinero;
+// además, se quiere saber cuánto lleva ahorrado cada mes.
+
+const cuantoAhorro = () => {
+  let mes = 12;
+  let contador = 0;
+  for (let i = 1; i <= mes; i++) {
+    let cantidad = parseInt(prompt("un mes "));
+    contador = contador + cantidad;
+    console.log(`EL mes ${[i]}, ${contador}`);
+  }
+  // console.log(`Al ano se ahorro:${contador}`);
+  return contador;
+};
+
+console.log(cuantoAhorro());
