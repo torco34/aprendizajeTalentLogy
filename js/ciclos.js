@@ -100,7 +100,6 @@ const notasFinales = () => {
     if (notas <= 3) {
       contador = contador + notas.length;
       suma = contador;
-
       console.log(`Menor o igual a 3 :     ${suma} notas  `);
     } else if (notas >= 4) {
       contador2 = contador2 + notas.length;
@@ -110,5 +109,22 @@ const notasFinales = () => {
       console.log(`No ingreso numeros   `);
     }
   }
+  return contador;
 };
-// notasFinales();
+// console.log(notasFinales(), `Notas menor`);
+
+// EJERCICIO 8
+// Desarrollar un programa que calcule el factorial de un número entero positivo.
+//  El factorial de un número es el producto de todos los números enteros positivos
+//  desde 1 hasta el número en cuestión.
+
+const numerosFactorial = () => {
+  let numeros = parseInt(prompt(`Ingrese numero`));
+  let total = 1;
+  for (let i = 1; i <= numeros; i++) {
+    total = total * i;
+    console.log(total);
+  }
+  console.log(numeros);
+};
+console.log(numerosFactorial());
