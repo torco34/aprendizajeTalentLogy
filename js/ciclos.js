@@ -92,19 +92,23 @@ const fibonacci = (numeros) => {
 // Escribir un programa que, dadas 5 notas finales, determine cuántas notas fueron mayores o iguales a 3.0.
 const notasFinales = () => {
   let contador = 0;
-  let arr = [];
+  let contador2 = 0;
 
   for (let i = 0; i < 5; i++) {
     let notas = prompt("Notas");
-    contador = contador + notas.length;
 
-    if (notas >= 3) {
-      console.log(` mayor  `);
-      arr.push(contador[i]);
+    if (notas <= 3) {
+      contador = contador + notas.length;
+      suma = contador;
+
+      console.log(`Menor o igual a 3 :     ${suma} notas  `);
+    } else if (notas >= 4) {
+      contador2 = contador2 + notas.length;
+      suma2 = contador2;
+      console.log(`Mayor a 3 :      ${suma2} notas`);
     } else {
-      console.log(`menor `);
-      arr.push(contador[i]);
+      console.log(`No ingreso numeros   `);
     }
   }
 };
-notasFinales();
+// notasFinales();
