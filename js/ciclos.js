@@ -127,4 +127,28 @@ const numerosFactorial = () => {
   }
   console.log(numeros);
 };
-console.log(numerosFactorial());
+// console.log(numerosFactorial());
+// EJERCICO 9
+// Escribir un programa que imprima todos los números pares entre dos números que se le pida al usuario.
+
+const numeroImpares = (num1, num2) => {
+  let num3 = 0;
+  if (num1 === num2) {
+    console.log(`Los numeros son iguales`);
+  } else if (num1 > num2) {
+    num1 = num2;
+    num2 = num1;
+    num2 = num3;
+   
+  }
+
+  while (num1 <= num2) {
+    if (num1 % 2 === 0) {
+      console.log(`numero ${num1} par`);
+    } else {
+      console.log(`numero ${num1} impar`);
+    }
+    num1++;
+  }
+};
+numeroImpares(2, 7);
