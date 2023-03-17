@@ -90,3 +90,19 @@ html {
 .btnsle ul li:hover {
   background-color: #fff;
 }
+/* FUNCITON EVENTOS TAP */
+
+.tap {
+  display: none;
+}
+.tap2 {
+  display: none;
+}
+
+.tap3 {
+  display: none;
+}
+
+.tap4 {
+  display: none;
+}
