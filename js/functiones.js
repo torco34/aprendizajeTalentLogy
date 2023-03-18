@@ -147,4 +147,33 @@ const numeroLetra = () => {
       break;
   }
 };
-numeroLetra();
+
+// numeroLetra();
+
+// Hacer un programa que pida por pantalla una temperatura en grados Celsius, muestre un menú para convertirlos a Fahrenheit o Kelvin y muestre el equivalente por pantalla, utilizando funciones.
+// Celsius a Fahrenheit: F = (9*C)/5 + 32;
+// Celsius a Kelvin: K = C + 273.15;
+
+const celsiusFahrenheit = (celsius) => {
+  let resultado = (celsius * 9) / 5.0 + 32;
+  return resultado;
+};
+
+const fahrenheitCelsius = (fahrenheit) => {
+  let resultado = ((fahrenheit - 32) * 5) / 9.0;
+  return resultado;
+};
+
+const celsiusKelvin = (kelvin) => {
+  let resultado = kelvin + 273.15;
+  return resultado;
+};
+let kelvin = 31;
+console.log(celsiusKelvin(kelvin));
+let celsius = 32;
+let resultado = celsiusFahrenheit(celsius);
+console.log(`${celsius} C = ${resultado} F`);
+
+let fahrenheit = resultado;
+resultado = fahrenheitCelsius(fahrenheit);
+console.log(` F ${fahrenheit} =  ${resultado} C`);

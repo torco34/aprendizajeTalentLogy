@@ -138,6 +138,7 @@ const calificaciones = () => {
 // Realizar un programa que pida tres números y diga cuáles son pares y cuáles impares.
 
 const paresImpar = () => {
+
   for (let i = 1; i <= 3; i++) {
     let n1 = parseInt(prompt("numero1"));
     if (n1 % 2 === 0 && n1 != 0) {
