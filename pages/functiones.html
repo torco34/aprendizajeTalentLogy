@@ -36,23 +36,65 @@
     <div class="container border">
       <h2>Ejercicio de funcion</h2>
     </div>
-    <div id="cuerpo" class="border">
-      <div id="tap1" class="btn btn-info">Sumar</div>
-      <div id="tap2" class="btn btn-primary">Resatar</div>
-      <div id="tap3" class="btn btn-danger">Multiplicar</div>
-      <div id="tap4" class="btn btn-dark">Diividir</div>
+    <div id="cuerpo" class="border container">
+      <div data-cuerpo="#tap1" class="btn btn-info">Sumar</div>
+      <div data-cuerpo="#tap2" class="btn btn-primary">Resatar</div>
+      <div data-cuerpo="#tap3" class="btn btn-danger">Multiplicar</div>
+      <div data-cuerpo="#tap4" class="btn btn-dark">Diividir</div>
     </div>
-    <div class="tap border m-100 h-50">
-      <p>sumar</p>
+    <div id="tap1" class="container text-center p-5 border">
+      <div>
+        <p class="text-info">Sumar</p>
+      </div>
+      <div class="container input border border-info rounded p-5">
+        <input
+          id="input1"
+          type="number"
+          placeholder=" numero1"
+          class="form-control"
+        />
+        <input
+          id="input2"
+          type="number"
+          placeholder="numero2"
+          class="form-control"
+        />
+        <br />
+        <button id="suma" class="btn btn-info">Suma</button>
+        <br />
+        <br />
+        <div id="element" class="border">...</div>
+      </div>
     </div>
-    <div class="tap border m-100 h-50">
-      <p>Restar</p>
+    <div id="tap2" class="container tap text-center border p-5 mb-3">
+      <p class="text-primary">Restar</p>
+      <div class="container input border border-primary rounded p-5">
+        <input id="" type="" placeholder="numero" class="form-control" />
+        <input id="" type="" placeholder="numero" class="form-control" />
+        <br />
+        <button id="suma" class="btn btn-primary">Resta</button>
+        <br />
+        <br />
+        <div id="element" class="border">...</div>
+      </div>
     </div>
-    <div class="tap border m-100 h-50">
-      <p>multiplication</p>
+    <div id="tap3" class="tap border container text-center p-5 mb-5">
+      <p class="text-danger">Multiplication</p>
+      <div class="container input border border-danger rounded p-5">
+        <input id="" type="" placeholder="numero" class="form-control" />
+        <input id="" type="" placeholder="numero" class="form-control" />
+        <button id="resta" class="btn btn-danger">multip</button>
+        <div id="element" class="border">...</div>
+      </div>
     </div>
-    <div class="tap border">
-      <p>dividir</p>
+    <div id="tap4" class="tap border container text-center p-5 mb-3">
+      <p class="text-dark">Dividir</p>
+      <div class="container input border border-dark rounded p-5">
+        <input id="" type="" placeholder="numero" class="form-control" />
+        <input id="" type="" placeholder="numero" class="form-control" />
+        <button id="resta" class="btn btn-dark">Dividir</button>
+        <div id="element" class="border">...</div>
+      </div>
     </div>
 
     <script src="../js/functiones.js"></script>

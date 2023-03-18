@@ -33,44 +33,76 @@ const arismetic = () => {
 
 const boton = document.getElementsByClassName("boton");
 const cuerpo = document.getElementById("cuerpo");
-const tapsBody = document.getElementsByClassName("tap");
+// const tapsBody = document.getElementsByClassName("tap");
 const taps1 = document.getElementById("tap1");
 const taps2 = document.getElementById("tap2");
 const taps3 = document.getElementById("tap3");
 const taps4 = document.getElementById("tap4");
+const suma = document.getElementById("suma");
 // console.log(taps);
 console.log(boton);
-const menu1 = () => {
-  tapsBody[0].style.display = "block";
-  tapsBody[1].style.display = "none";
-  tapsBody[2].style.display = "none";
-  tapsBody[3].style.display = "none";
+const taps = (e) => {
+  e.preventDefault();
+
+  taps1.style.display = "none";
+  taps2.style.display = "none";
+  taps3.style.display = "none";
+  taps4.style.display = "none";
+  const link = e.target;
+  const cuerpoId = link.dataset.cuerpo;
+  console.log(cuerpoId);
+  const cuerpo = document.querySelector(cuerpoId);
+  cuerpo.style.display = "block";
+  const papa = link.parentNode;
+  papa.classList.add("active");
+};
+const sumaInput = (e) => {
+  e.preventDefault();
+  const input1 = document.getElementById("input1");
+  const input2 = document.getElementById("input2");
+  const element = document.getElementById("element");
+  let suma1 = parseInt(input1.value);
+  let suma2 = parseInt(input2.value);
+  total = suma1 + suma2;
+  console.log(total);
+  if (total === 0) {
+    element.innerHTML = `Suma ${total}`;
+  }
+  element.innerHTML = `Suma ${total}`;
 };
 
-const menu2 = () => {
-  tapsBody[0].style.display = "none";
-  tapsBody[1].style.display = "block";
-  tapsBody[2].style.display = "none";
-  tapsBody[3].style.display = "none";
+cuerpo.addEventListener("click", taps);
+suma.addEventListener("click", sumaInput);
+// fuccion de del input sumar
+const restar = () => {
+  let resta1 = 45;
+  let resta2 = 6;
+  resultado = resta1 - resta2;
+  console.log(resultado);
+};
+// restar();
+const multiplicar = () => {
+  let num = 7;
+  let num2 = 8;
+  multip = num * num2;
+  console.log(multip);
+};
+// multiplicar();
+
+const divicion = () => {
   
+  let num1 = 21;
+  let num2 = 1;
+  if (num1 < num2) {
+    divic = num2 / num1;
+    console.log(divic);
+  } else {
+    divic = num1 / num2;
+    console.log(divic);
+  }
 };
 
-const menu3 = () => {
-  tapsBody[0].style.display = "none";
-  tapsBody[1].style.display = "none";
-  tapsBody[2].style.display = "block";
-  tapsBody[3].style.display = "none";
-};
+// divicion();
 
-const menu4 = () => {
-  tapsBody[0].style.display = "none";
-  tapsBody[1].style.display = "none";
-  tapsBody[2].style.display = "none";
-  tapsBody[3].style.display = "block";
-};
+//EJERCICIO 4
 
-// cuerpo.addEventListener("click", menu);
-taps1.addEventListener("click", menu1);
-taps2.addEventListener("click", menu2);
-taps3.addEventListener("click", menu3);
-taps4.addEventListener("click", menu4);
