@@ -150,6 +150,7 @@ const numeroLetra = () => {
 
 // numeroLetra();
 
+// EJERCICIO 5
 // Hacer un programa que pida por pantalla una temperatura en grados Celsius, muestre un menú para convertirlos a Fahrenheit o Kelvin y muestre el equivalente por pantalla, utilizando funciones.
 // Celsius a Fahrenheit: F = (9*C)/5 + 32;
 // Celsius a Kelvin: K = C + 273.15;
@@ -169,5 +170,23 @@ let resultado = celsiusAFahrenheit(celsiusF);
 console.log(` Cº ${celsiusF} = Fº${resultado} `);
 
 let celsiusK = 31;
-const gradoKilvin = celsiusAKelvin(celsiusK);
-console.log(` Cº ${celsiusK} = ${gradoKilvin} Kº `);
+const gradoKelvin = celsiusAKelvin(celsiusK);
+console.log(` Cº ${celsiusK} = ${gradoKelvin} Kº `);
+
+// EJERCICIO 6
+// Hacer un programa que muestre una tabla de multiplicar hasta el 20
+// de un número cualquiera por pantalla, el número se pedirá en el programa
+// principal. Usar procedimiento.
+const tablaMultiplicar = () => {
+  let num1 = parseInt(prompt("ingresa numero"));
+  // let num2 = parseInt(prompt("numero"));
+  for (let i = 1; i <= 20; i++) {
+    if (num1 === num1) {
+      console.log(` ${num1} X ${i}= ${num1 * i} `);
+    } else {
+      console.log(`No ingreso numero`);
+    }
+  }
+};
+
+tablaMultiplicar();
