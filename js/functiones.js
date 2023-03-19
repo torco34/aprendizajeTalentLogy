@@ -154,26 +154,20 @@ const numeroLetra = () => {
 // Celsius a Fahrenheit: F = (9*C)/5 + 32;
 // Celsius a Kelvin: K = C + 273.15;
 
-const celsiusFahrenheit = (celsius) => {
-  let resultado = (celsius * 9) / 5.0 + 32;
+const celsiusAFahrenheit = (celsiusF) => {
+  let resultado = (celsiusF * 9) / 5.0 + 32;
   return resultado;
 };
 
-const fahrenheitCelsius = (fahrenheit) => {
-  let resultado = ((fahrenheit - 32) * 5) / 9.0;
+const celsiusAKelvin = (celsiusK) => {
+  let resultado = celsiusK + 273.15;
   return resultado;
 };
 
-const celsiusKelvin = (kelvin) => {
-  let resultado = kelvin + 273.15;
-  return resultado;
-};
-let kelvin = 31;
-console.log(celsiusKelvin(kelvin));
-let celsius = 32;
-let resultado = celsiusFahrenheit(celsius);
-console.log(`${celsius} C = ${resultado} F`);
+let celsiusF = 32;
+let resultado = celsiusAFahrenheit(celsiusF);
+console.log(` Cº ${celsiusF} = Fº${resultado} `);
 
-let fahrenheit = resultado;
-resultado = fahrenheitCelsius(fahrenheit);
-console.log(` F ${fahrenheit} =  ${resultado} C`);
+let celsiusK = 31;
+const gradoKilvin = celsiusAKelvin(celsiusK);
+console.log(` Cº ${celsiusK} = ${gradoKilvin} Kº `);
