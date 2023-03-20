@@ -138,7 +138,6 @@ const calificaciones = () => {
 // Realizar un programa que pida tres números y diga cuáles son pares y cuáles impares.
 
 const paresImpar = () => {
-
   for (let i = 1; i <= 3; i++) {
     let n1 = parseInt(prompt("numero1"));
     if (n1 % 2 === 0 && n1 != 0) {
@@ -155,62 +154,53 @@ const paresImpar = () => {
 //  y cuál es el menor. (Mostrar: mayor: persona 1, medio: persona 3, menor: persona 2)
 // if()
 const ingresarNumeros = () => {
-  let p1 = parseInt(prompt("p1"));
-  let p2 = parseInt(prompt("p2"));
-  let p3 = parseInt(prompt("p3"));
-  console.log(`Numeros ingresados ${p1} ${p2} ${p3}`);
+  let a = parseInt(prompt("p1"));
+  let b = parseInt(prompt("p2"));
+  let c = parseInt(prompt("p3"));
+  console.log(`Numeros ingresados ${a} ${b} ${c}`);
 
-  if (p1 > p2 && p1 > p3) {
-    console.log(`mayor: persona.. ${p1}  `);
-  } else if (p2 > p1 && p2 > p3) {
-    console.log(`mayor: persona  ${p2}  `);
-  } else if (p3 > p2 && p3 > p1) {
-    console.log(`mayor: persona  ${p3} `);
+  // a=1 b=2 c=3
+  // b=1 a=2 c=3
+  // c=1 a=2 b=3
+  if (a < b && a < c && b < c) {
+    console.log(` primero ${a} medio ${b} mayor ${c}`);
+  } else if (b < a && b < c && a < c) {
+    // console.log(b, a, c, "menor");
+    console.log(` primero ${b} medio ${a} mayor ${c}`);
+  } else if (c < b && c < a && a < b) {
+    // console.log(c, a, b, "menor");
+    console.log(` primero ${c} medio ${a} mayor ${b}`);
   }
-
-  if (p1 < p2 && p2 < p3) {
-    console.log(`medio: persona  ${p2} `);
-  } else if (p1 > p2 && p2 > p3) {
-    console.log(`medio: persona  ${p2} `);
-  } else if (p2 > p1 && p1 > p3) {
-    console.log(`medio: persona  ${p1} `);
-  } else if (p2 === p3 && p1 != p2) {
-    console.log(`Tiene dos numero iguales ${p2} ${p2}`);
-  } else if (p2 > p1 && p1 < p3) {
-    console.log(`medio: persona  ${p3} `);
-  } else if (p1 === p3 && p1 > p2) {
-    console.log(`Tiene dos numeros iguales ${p1}  ..... ${p3} `);
-  } else if (p3 > p1 && p2 < p3) {
-    console.log(`Medio: ${p1} `);
-  } else if (p2 < p1 && p2 < p3) {
-    console.log(`Medio: ${p3} `);
-  } else if (p1 > p2 && p2 < p3) {
-    console.log(`Medio: ${p1}  prueba`);
-  } else if (p1 > p2 && p2 < p3) {
-    console.log(`medio:  ${p3} `);
-  } else if (p1 === p2 && p2 != p3) {
-    console.log(`Tiene dos numero iguales ${p1}  ${p2}`);
-  } else if (p1 === p3 && p1 != p3) {
-    console.log(`Tiene dos numero iguales   ${p1}  ${p3}`);
-  } else if (p1 === p3 && p2 === p3) {
-    // console.log(`Son iguales ${p1} me${p3}`);
-    console.log(`Los tres numeros son iguales`);
-  } else if (p2 === p3) {
-    console.log(`Tiene dos numero iguales   ${p2}  ${p3} `);
-  } else if (p1 === p3 && p2 > p3) {
-    console.log(`Son iguales ${p1} ${p3}`);
+  // a=3 b=2 c=1
+  // b=3 a=2 c=1
+  // c=3 a=2 b=1
+  //
+  if (a > b && a > c && b > c) {
+    console.log(c, b, a, "mayor");
+    console.log(` primero ${c} medio ${b} mayor ${a}`);
+  } else if (b > a && b > c && a > c) {
+    console.log(` primero ${c} medio ${a} mayor ${b}`);
+  } else if (c > b && c > a && a > b) {
+    console.log(` primero ${b} medio ${a} mayor ${c}`);
   }
-
-  if (p1 < p2 && p1 < p3) {
-    console.log(` menor: persona ${p1} `);
-  } else if (p2 < p1 && p2 < p3) {
-    console.log(` menor: persona ${p2}`);
-  } else if (p3 < p2 && p3 < p1) {
-    console.log(` menor: persona ${p3} `);
-  } else {
+  // a=3  c=2 b=1
+  // b=3  c=2 a=1
+  // c=3  b=2 a=1
+  if (a > b && a > c && c > b) {
+    console.log(b, c, a, "mayor c");
+    console.log(` primero ${b} medio ${c} mayor ${a}`);
+  } else if (b > a && b > c && c > a) {
+    // console.log(a, c, b, "mayor > c ");
+    console.log(` primero ${a} medio ${c} mayor ${b}`);
+  } else if (c > b && c > a && a > b) {
+    // console.log(`numeros iguales  1`);
+    console.log(` primero ${a} medio ${b} mayor ${c}`);
+  } else if (a === b || c === a) {
+    console.log(` Dos o mas numeros iguales`);
   }
+  // console.log(`dos numeros iguales`);
 };
-// ingresarNumeros();
+ingresarNumeros();
 
 // 10 EJERCICIO DE CONDICIÓN
 // Pida a usuario la edad y el sexo, para que la computadora le indique si ya puede jubilarse.

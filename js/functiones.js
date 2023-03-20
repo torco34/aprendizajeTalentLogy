@@ -189,4 +189,18 @@ const tablaMultiplicar = () => {
   }
 };
 
-tablaMultiplicar();
+// tablaMultiplicar();
+// ejercicio 7
+
+// Hacer un programa que muestre 3 números ordenados ascendentemente, utilizando un procedimiento para cada operación.
+const ordenNum = () => {
+  let num1 = parseInt(prompt("ingresa numero"));
+  let num2 = parseInt(prompt("ingresa numero"));
+  let num3 = parseInt(prompt("ingresa numero"));
+  let ordenMin = Math.min(num1, num2, num3);
+  let ordenMay = Math.max(num1, num2, num3);
+  let ordenTotal = num1 + num2 + num3 - ordenMin - ordenMay;
+  console.log(ordenMin, ordenTotal, ordenMay);
+};
+
+ordenNum();

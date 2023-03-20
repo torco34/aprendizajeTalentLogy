@@ -168,4 +168,4 @@ const cuantoAhorro = () => {
   return contador;
 };
 
-console.log(` Al año: ${cuantoAhorro()}`);
+// console.log(` Al año: ${cuantoAhorro()}`);a
