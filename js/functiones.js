@@ -199,8 +199,30 @@ const ordenNum = () => {
   let num3 = parseInt(prompt("ingresa numero"));
   let ordenMin = Math.min(num1, num2, num3);
   let ordenMay = Math.max(num1, num2, num3);
-  let ordenTotal = num1 + num2 + num3 - ordenMin - ordenMay;
-  console.log(ordenMin, ordenTotal, ordenMay);
+
+  let ordenMen = num1 + num2 + num3 - ordenMin - ordenMay;
+  console.log(ordenMin, ordenMen, ordenMay);
 };
 
-ordenNum();
+// ordenNum();
+
+// EJERCICIO 8
+// Hacer un programa que muestre 3 números ordenados descendentemente, utilizar un procedimiento para cada operación.
+// Recursividad:
+
+const fibonacci = (n) => {
+  if (n < 2) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+};
+
+const fibonacci2 = (n) => {
+  const numero1 = fibonacci(2);
+  const numero2 = fibonacci(3);
+  const numero3 = fibonacci(4);
+  let orden1 = Math.min(numero1, numero2, numero3);
+  let orden3 = Math.max(numero1, numero2, numero3);
+  let orden2 = numero1 + numero2 + numero3 - orden1 - orden3;
+  console.log(orden3, orden2, orden1);
+  console.log(numero1, numero2, numero3);
+};
+fibonacci2();
