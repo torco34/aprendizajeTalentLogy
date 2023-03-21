@@ -58,7 +58,7 @@ const taps = (e) => {
 };
 const sumaInput = (e) => {
   e.preventDefault();
-  const input1 = document.getElementById("input1");
+  // const input1 = document.getElementById("input1");
   const input2 = document.getElementById("input2");
   const element = document.getElementById("element");
   let suma1 = parseInt(input1.value);
@@ -237,10 +237,47 @@ const sumaN = () => {
   const suma2 = sumasNumero(2, 2);
   const suma3 = sumasNumero(2, 5);
   console.log(suma, "sum", suma2, suma3);
+
   let orden3 = Math.max(suma, suma2, suma3);
   let orden1 = Math.min(suma, suma2, suma3);
   let orden2 = suma + suma2 + suma3 - orden1 - orden3;
   console.log(orden3, orden2, orden1);
 };
 
-sumaN();
+// sumaN();
+
+const binario = (num) => {
+  let arr = [];
+  while (num > 1) {
+    arr.push(num % 2);
+    num = Math.floor(num / 2);
+  }
+  arr.push(num);
+  return parseInt(arr.reverse().join(""));
+};
+console.log(binario(10));
+console.log(binario(11));
+console.log(binario(13));
+
+const hola = () => {
+  console.log("Hola");
+};
+
+const mundo = () => {
+  hola();
+  console.log("mundo");
+};
+
+mundo();
+
+const numero2 = (num) => {
+  num = num.toString();
+  console.log(num);
+  let arr = num.split("");
+  let reverse = arr.reverse();
+  let result = reverse.join("");
+  console.log(result);
+  if (arr != "") return arr;
+  return numero2(result);
+};
+console.log(numero2(345));
