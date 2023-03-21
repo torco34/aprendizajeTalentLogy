@@ -215,10 +215,10 @@ const fibonacci = (n) => {
   return fibonacci(n - 1) + fibonacci(n - 2);
 };
 
-const fibonacci2 = (n) => {
-  const numero1 = fibonacci(2);
-  const numero2 = fibonacci(3);
-  const numero3 = fibonacci(4);
+const fibonacci2 = () => {
+  const numero1 = fibonacci(6);
+  const numero2 = fibonacci(7);
+  const numero3 = fibonacci(8);
   let orden1 = Math.min(numero1, numero2, numero3);
   let orden3 = Math.max(numero1, numero2, numero3);
   let orden2 = numero1 + numero2 + numero3 - orden1 - orden3;
@@ -226,3 +226,21 @@ const fibonacci2 = (n) => {
   console.log(numero1, numero2, numero3);
 };
 fibonacci2();
+
+const sumasNumero = (n, e) => {
+  if (n >= 4) return n;
+  return (resul = sumasNumero(n + e) + sumasNumero(n + e));
+};
+
+const sumaN = () => {
+  const suma = sumasNumero(3, 2);
+  const suma2 = sumasNumero(2, 2);
+  const suma3 = sumasNumero(2, 5);
+  console.log(suma, "sum", suma2, suma3);
+  let orden3 = Math.max(suma, suma2, suma3);
+  let orden1 = Math.min(suma, suma2, suma3);
+  let orden2 = suma + suma2 + suma3 - orden1 - orden3;
+  console.log(orden3, orden2, orden1);
+};
+
+sumaN();
