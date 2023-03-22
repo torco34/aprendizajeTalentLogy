@@ -120,7 +120,7 @@ const button = document.getElementById("boton");
 const numeroLetra = (e) => {
   e.preventDefault();
   const element = document.getElementById("elemento");
-  let num = parseInt(prompt(""));
+  let num = parseInt(prompt("Ingresar numero"));
   console.log(num);
   switch (num) {
     case 1:
@@ -169,7 +169,9 @@ button.addEventListener("click", numeroLetra);
 // numeroLetra();
 
 // EJERCICIO 5
-// Hacer un programa que pida por pantalla una temperatura en grados Celsius, muestre un menú para convertirlos a Fahrenheit o Kelvin y muestre el equivalente por pantalla, utilizando funciones.
+// Hacer un programa que pida por pantalla una temperatura en grados Celsius,
+//  muestre un menú para convertirlos a Fahrenheit o Kelvin y muestre el equivalente
+// por pantalla, utilizando funciones.
 // Celsius a Fahrenheit: F = (9*C)/5 + 32;
 // Celsius a Kelvin: K = C + 273.15;
 
@@ -183,12 +185,36 @@ const celsiusAKelvin = (celsiusK) => {
   return resultado;
 };
 
-let celsiusF = 32;
-let resultado = celsiusAFahrenheit(celsiusF);
+const botCelsios = document.getElementById("botCelsios");
+
+function mostrarCelsiousAFahrenhrenheit(e) {
+  e.preventDefault();
+  let elementGr = document.getElementById("elementGr");
+  const gradoCelsious = parseInt(prompt(`Celsius`));
+  let resultado = celsiusAFahrenheit(gradoCelsious);
+  elementGr.innerHTML = `Cº ${gradoCelsious} = Fº ${resultado} `;
+}
+
+botCelsios.addEventListener("click", mostrarCelsiousAFahrenhrenheit);
+
+const botKelvin = document.getElementById("botKelvin");
+function mostrarCelsiousAKelvin(e) {
+  e.preventDefault();
+  let elementGr = document.getElementById("elementGr");
+  const celsiusK = parseInt(prompt(`Celsius a kelvin`));
+  const gradoKelvin = celsiusAKelvin(celsiusK);
+
+  elementGr.innerHTML = ` Cº ${celsiusK} = ${gradoKelvin} Kº `;
+}
+botKelvin.addEventListener("click", mostrarCelsiousAKelvin);
+
+// console.log(gradoCelsious, "grados");
+// let celsiusF = 32;
+// let resultado = celsiusAFahrenheit(celsiusF);
 // console.log(` Cº ${celsiusF} = Fº${resultado} `);
 
-let celsiusK = 31;
-const gradoKelvin = celsiusAKelvin(celsiusK);
+// let celsiusK = 31;
+// const gradoKelvin = celsiusAKelvin(celsiusK);
 // console.log(` Cº ${celsiusK} = ${gradoKelvin} Kº `);
 
 // EJERCICIO 6
