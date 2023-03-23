@@ -208,48 +208,75 @@ function mostrarCelsiousAKelvin(e) {
 }
 botKelvin.addEventListener("click", mostrarCelsiousAKelvin);
 
-// console.log(gradoCelsious, "grados");
-// let celsiusF = 32;
-// let resultado = celsiusAFahrenheit(celsiusF);
-// console.log(` Cº ${celsiusF} = Fº${resultado} `);
-
-// let celsiusK = 31;
-// const gradoKelvin = celsiusAKelvin(celsiusK);
-// console.log(` Cº ${celsiusK} = ${gradoKelvin} Kº `);
-
 // EJERCICIO 6
 // Hacer un programa que muestre una tabla de multiplicar hasta el 20
 // de un número cualquiera por pantalla, el número se pedirá en el programa
 // principal. Usar procedimiento.
+const tabla = document.getElementById("tabla");
+const elementTabla = document.getElementById("elementTabla");
 const tablaMultiplicar = () => {
   let num1 = parseInt(prompt("ingresa numero"));
-  // let num2 = parseInt(prompt("numero"));
+
   for (let i = 1; i <= 20; i++) {
-    if (num1 === num1) {
-      console.log(` ${num1} X ${i}= ${num1 * i} `);
-    } else {
-      console.log(`No ingreso numero`);
-    }
+    elementTabla.innerHTML += `<p>${num1} X ${i}= ${num1 * i} </p>`;
   }
 };
+tabla.addEventListener("click", tablaMultiplicar);
 
-// tablaMultiplicar();
 // ejercicio 7
 
-// Hacer un programa que muestre 3 números ordenados ascendentemente, utilizando un procedimiento para cada operación.
-const ordenNum = () => {
-  let num1 = parseInt(prompt("ingresa numero"));
-  let num2 = parseInt(prompt("ingresa numero"));
-  let num3 = parseInt(prompt("ingresa numero"));
-  let ordenMin = Math.min(num1, num2, num3);
-  let ordenMay = Math.max(num1, num2, num3);
-
-  let ordenMen = num1 + num2 + num3 - ordenMin - ordenMay;
-  // console.log(ordenMin, ordenMen, ordenMay);
-};
+// Hacer un programa que muestre 3 números ordenados ascendentemente,
+// utilizando un procedimiento para cada operación.
 
 // ordenNum();
+// let nu1 = parseInt(prompt("ingresa numero 1"));
+// let nu2 = parseInt(prompt("ingresa numero 2"));
+// let nu3 = parseInt(prompt("ingresa numero 4"));
 
+const ordenNum1 = () => {
+  let nu1 = 5;
+  return nu1;
+};
+
+const ordenNum2 = () => {
+  let nu2 = 4;
+  return nu2;
+};
+
+const ordenNum3 = () => {
+  let nu3 = 6;
+  return nu3;
+};
+
+const ordenMayor = () => {
+  let ordenMay = Math.max(ordenNum1(), ordenNum2(), ordenNum3());
+  return ordenMay;
+};
+const ordenMenor = () => {
+  let ordenMin = Math.min(ordenNum1(), ordenNum2(), ordenNum3());
+  let ordenMay = Math.max(ordenNum1(), ordenNum2(), ordenNum3());
+  let ordenNumeros =
+    ordenNum1() + ordenNum2() + ordenNum3() - ordenMin - ordenMay;
+  return ordenNumeros;
+};
+const ordenMinimo = () => {
+  let ordenMin = Math.min(ordenNum1(), ordenNum2(), ordenNum3());
+  return ordenMin;
+};
+console.log(ordenMinimo());
+console.log(ordenMenor());
+console.log(ordenMayor());
+
+// const resultadoNum = () => {
+//   let num1 = ordenNum1();
+//   let num2 = ordenNum2();
+//   let num3 = ordenNum3();
+//   console.log(num1, num2, num3);
+//   let sumaTotal = num1 + num2 + num3;
+//   return sumaTotal;
+// };
+// resultadoNum();
+// console.log(resultadoNum());
 // EJERCICIO 8
 // Hacer un programa que muestre 3 números ordenados descendentemente, utilizar un procedimiento para cada operación.
 // Recursividad:
@@ -269,7 +296,7 @@ const fibonacci2 = () => {
   // console.log(orden3, orden2, orden1);
   // console.log(numero1, numero2, numero3);
 };
-fibonacci2();
+// fibonacci2();
 
 const sumasNumero = (n, e) => {
   if (n >= 4) return n;
@@ -344,7 +371,7 @@ function invertirNumero(num) {
     );
   }
 }
-console.log(invertirNumero(421));
+// console.log(invertirNumero(421));
 // console.log(invertirNumero(5));
 
 const math = (n) => {
