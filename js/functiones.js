@@ -284,45 +284,28 @@ const medio = () => {
   const numeroMedio = numero1 + numero2 + numero3 - menor() - mayor();
   return numeroMedio;
 };
-console.log(mayor());
-console.log(medio());
-console.log(menor());
+// console.log(mayor());
+// console.log(medio());
+// console.log(menor());
+
+// CON RECURSIVIDAD 1
+// Serie Fibonacci con Recursividad: 1.1.2.3.5.8…
 const fibonacci = (n) => {
   if (n < 2) return n;
   return fibonacci(n - 1) + fibonacci(n - 2);
 };
 
-// const fibonacci2 = () => {
-//   const numero1 = fibonacci(6);
-//   const numero2 = fibonacci(7);
-//   const numero3 = fibonacci(8);
-//   let orden1 = Math.min(numero1, numero2, numero3);
-//   let orden3 = Math.max(numero1, numero2, numero3);
-//   let orden2 = numero1 + numero2 + numero3 - orden1 - orden3;
-//   // console.log(orden3, orden2, orden1);
-//   // console.log(numero1, numero2, numero3);
-// };
-// fibonacci2();
+// CON RECURSIVIDAD 2
+// Consideremos una función que recibe un número n e imprime los números del n al 1 con recursividad.
 
 const sumasNumero = (n, e) => {
   if (n >= 4) return n;
   return (resul = sumasNumero(n + e) + sumasNumero(n + e));
 };
+console.log(sumasNumero());
 
-const sumaN = () => {
-  const suma = sumasNumero(3, 2);
-  const suma2 = sumasNumero(2, 2);
-  const suma3 = sumasNumero(2, 5);
-  console.log(suma, "sum", suma2, suma3);
-
-  let orden3 = Math.max(suma, suma2, suma3);
-  let orden1 = Math.min(suma, suma2, suma3);
-  let orden2 = suma + suma2 + suma3 - orden1 - orden3;
-  // console.log(orden3, orden2, orden1);
-};
-
-// sumaN();
-
+// CON RECURSIVIDAD 3
+// Pasar de número entero a número binario con Recursividad.
 const binario = (num) => {
   let arr = [];
   while (num > 1) {
@@ -333,35 +316,9 @@ const binario = (num) => {
   return parseInt(arr.reverse().join(""));
 };
 // console.log(binario(10));
-// console.log(binario(11));
-// console.log(binario(13));
 
-const hola = () => {
-  // console.log("Hola");
-};
-
-const mundo = () => {
-  hola();
-  // console.log("mundo");
-};
-
-// mundo();
-
-// const numero2 = (num) => {
-//   let arr2 = [];
-//   num = num.toString();
-//   console.log(num, "num");
-//   let arr = num.split("");
-//   let reverse = arr.reverse();
-//   console.log(reverse, "reverse");
-//   let result = reverse.join("");
-//   arr2 = arr2 + result;
-//   console.log(arr2, "reverse---");
-
-//   return arr2;
-// };
-// console.log(numero2(254));
-
+// CON RECURSIVIDAD 4
+// Pasar de número entero a número binario con Recursividad.
 function invertirNumero(num) {
   console.log(num);
   if (num < 10) {
@@ -378,7 +335,7 @@ function invertirNumero(num) {
   }
 }
 // console.log(invertirNumero(421));
-// console.log(invertirNumero(5));
+// Invertir un número entero con Recursividad.
 
 const math = (n) => {
   console.log(n, "numero entrante");
@@ -393,4 +350,3 @@ const math = (n) => {
   return math(ultimo).toString() + math(resto).toString();
 };
 // console.log(math(345));
-// math(23);
