@@ -121,11 +121,10 @@ const numeroLetra = (e) => {
   e.preventDefault();
   const element = document.getElementById("elemento");
   let num = parseInt(prompt("Ingresar numero"));
-  console.log(num);
+
   switch (num) {
     case 1:
       element.innerHTML = ` Uno`;
-
       break;
     case 2:
       element.innerHTML = ` Dos`;
@@ -133,10 +132,8 @@ const numeroLetra = (e) => {
     case 3:
       element.innerHTML = ` Tres`;
       break;
-
     case 4:
       element.innerHTML = ` Cuatro`;
-
       break;
     case 5:
       element.innerHTML = ` Cinco`;
@@ -146,22 +143,18 @@ const numeroLetra = (e) => {
       break;
     case 7:
       element.innerHTML = ` Siete`;
-
       break;
     case 8:
       element.innerHTML = `Ocho`;
-
       break;
     case 9:
       element.innerHTML = ` Nueve`;
       break;
     case 10:
       element.innerHTML = ` Diez`;
-
       break;
     default:
       element.innerHTML = `Numeros no validos`;
-
       break;
   }
 };
@@ -302,7 +295,7 @@ const sumasNumero = (n, e) => {
   if (n >= 4) return n;
   return (resul = sumasNumero(n + e) + sumasNumero(n + e));
 };
-console.log(sumasNumero());
+console.log(sumasNumero(34));
 
 // CON RECURSIVIDAD 3
 // Pasar de número entero a número binario con Recursividad.
