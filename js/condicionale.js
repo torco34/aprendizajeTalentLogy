@@ -159,46 +159,39 @@ const ingresarNumeros = () => {
   let c = parseInt(prompt("p3"));
   console.log(`Numeros ingresados ${a} ${b} ${c}`);
 
-  // a=1 b=2 c=3
-  // b=1 a=2 c=3
-  // c=1 a=2 b=3
-  if (a < b && a < c && b < c) {
-    console.log(` primero ${a} medio ${b} mayor ${c}`);
-  } else if (b < a && b < c && a < c) {
-    // console.log(b, a, c, "menor");
-    console.log(` primero ${b} medio ${a} mayor ${c}`);
-  } else if (c < b && c < a && a < b) {
-    // console.log(c, a, b, "menor");
-    console.log(` primero ${c} medio ${a} mayor ${b}`);
+  if (a < b && a < c) {
+    //
+    console.log(a, "menor a");
+  } else if (b < a && b < c) {
+    //
+    console.log(b, "menor b");
+  } else if (c < b && c < a) {
+    console.log(c, "menor c");
   }
-  // a=3 b=2 c=1
-  // b=3 a=2 c=1
-  // c=3 a=2 b=1
-  //
-  if (a > b && a > c && b > c) {
-    console.log(c, b, a, "mayor");
-    console.log(` primero ${c} medio ${b} mayor ${a}`);
-  } else if (b > a && b > c && a > c) {
-    console.log(` primero ${c} medio ${a} mayor ${b}`);
-  } else if (c > b && c > a && a > b) {
-    console.log(` primero ${b} medio ${a} mayor ${c}`);
+
+  if (a > b && a > c) {
+    console.log(a, "mayor a");
+  } else if (b > a && b > c) {
+    console.log(b, "mayor b");
+  } else if (c > b && c > a) {
+    console.log(c, "mayor c");
   }
-  // a=3  c=2 b=1
-  // b=3  c=2 a=1
-  // c=3  b=2 a=1
-  if (a > b && a > c && c > b) {
-    console.log(b, c, a, "mayor c");
-    console.log(` primero ${b} medio ${c} mayor ${a}`);
-  } else if (b > a && b > c && c > a) {
-    // console.log(a, c, b, "mayor > c ");
-    console.log(` primero ${a} medio ${c} mayor ${b}`);
-  } else if (c > b && c > a && a > b) {
-    // console.log(`numeros iguales  1`);
-    console.log(` primero ${a} medio ${b} mayor ${c}`);
-  } else if (a === b || c === a) {
-    console.log(` Dos o mas numeros iguales`);
+  // 123
+  // abc
+  if (a < b && a > c) {
+    console.log(a, "media a");
+    // abc,
+  } else if (b > a && b < c) {
+    console.log(b, "media b");
+    // abc acb
+  } else if (c < a && c > b) {
+    console.log(c, "media c");
+    // abc bca
+  } else if (a > c && c < b) {
+    // console.log(`Numeros ingresados ${a} ${b} ${c}`);
+    console.log(b, "media c....");
+    // console.log("algo no esta bien");
   }
-  // console.log(`dos numeros iguales`);
 };
 ingresarNumeros();
 

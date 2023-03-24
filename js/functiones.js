@@ -229,9 +229,6 @@ tabla.addEventListener("click", tablaMultiplicar);
 // utilizando un procedimiento para cada operación.
 
 // ordenNum();
-// let nu1 = parseInt(prompt("ingresa numero 1"));
-// let nu2 = parseInt(prompt("ingresa numero 2"));
-// let nu3 = parseInt(prompt("ingresa numero 4"));
 
 const ordenNum1 = () => {
   let nu1 = 5;
@@ -259,43 +256,52 @@ const ordenMenor = () => {
     ordenNum1() + ordenNum2() + ordenNum3() - ordenMin - ordenMay;
   return ordenNumeros;
 };
-const ordenMinimo = () => {
+const ordenMínimo = () => {
   let ordenMin = Math.min(ordenNum1(), ordenNum2(), ordenNum3());
   return ordenMin;
 };
-console.log(ordenMinimo());
-console.log(ordenMenor());
-console.log(ordenMayor());
+// console.log(ordenMínimo());
+// console.log(ordenMenor());
+// console.log(ordenMayor());
 
-// const resultadoNum = () => {
-//   let num1 = ordenNum1();
-//   let num2 = ordenNum2();
-//   let num3 = ordenNum3();
-//   console.log(num1, num2, num3);
-//   let sumaTotal = num1 + num2 + num3;
-//   return sumaTotal;
-// };
-// resultadoNum();
-// console.log(resultadoNum());
-// EJERCICIO 8
-// Hacer un programa que muestre 3 números ordenados descendentemente, utilizar un procedimiento para cada operación.
-// Recursividad:
+// 8 EJERCICIO
+// Hacer un programa que muestre 3 números ordenados descendentemente,
+// utilizar un procedimiento para cada operación.
+let numero1 = 3;
+let numero2 = 6;
+let numero3 = 7;
+const menor = () => {
+  const numeroMenor = Math.min(numero1, numero2, numero3);
+  return numeroMenor;
+};
 
+const mayor = () => {
+  const numeroMedio = Math.max(numero1, numero2, numero3);
+  return numeroMedio;
+};
+
+const medio = () => {
+  const numeroMedio = numero1 + numero2 + numero3 - menor() - mayor();
+  return numeroMedio;
+};
+console.log(mayor());
+console.log(medio());
+console.log(menor());
 const fibonacci = (n) => {
   if (n < 2) return n;
   return fibonacci(n - 1) + fibonacci(n - 2);
 };
 
-const fibonacci2 = () => {
-  const numero1 = fibonacci(6);
-  const numero2 = fibonacci(7);
-  const numero3 = fibonacci(8);
-  let orden1 = Math.min(numero1, numero2, numero3);
-  let orden3 = Math.max(numero1, numero2, numero3);
-  let orden2 = numero1 + numero2 + numero3 - orden1 - orden3;
-  // console.log(orden3, orden2, orden1);
-  // console.log(numero1, numero2, numero3);
-};
+// const fibonacci2 = () => {
+//   const numero1 = fibonacci(6);
+//   const numero2 = fibonacci(7);
+//   const numero3 = fibonacci(8);
+//   let orden1 = Math.min(numero1, numero2, numero3);
+//   let orden3 = Math.max(numero1, numero2, numero3);
+//   let orden2 = numero1 + numero2 + numero3 - orden1 - orden3;
+//   // console.log(orden3, orden2, orden1);
+//   // console.log(numero1, numero2, numero3);
+// };
 // fibonacci2();
 
 const sumasNumero = (n, e) => {
