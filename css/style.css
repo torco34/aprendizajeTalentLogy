@@ -71,10 +71,13 @@ html {
   margin: auto 0;
   text-align: center;
   border: transparent;
-
   margin-top: 1rem;
   background-color: #f5576cd9;
   border: solid rgb(201, 118, 85) 2px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .btnsle ul li a {
