@@ -13,3 +13,22 @@ function array() {
 }
 
 arrBoton.addEventListener("click", array);
+// Ejercicio 2 array
+// Crea un array o arreglo unidimensional con un tamaño de 10,
+//  inserta los valores numéricos que desees de la manera que quieras
+//  y muestra por pantalla la media de valores del array.
+
+function mediaArray() {
+    const elementArr = document.getElementById("elementArr");
+    const arrBoton = document.getElementById("arrBoton");
+  let array = [];
+  let contador = 0;
+  for (let i = 0; i < 10; i++) {
+    array[i] = parseInt(prompt("Ingresar array"));
+    contador = contador + array[i];
+    console.log(contador, array);
+    resultado = contador / 10;
+  }
+  console.log(contador, resultado);
+}
+mediaArray();
