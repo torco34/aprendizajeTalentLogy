@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">TalentLogy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Aprendizaje TalentLogy
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./variables.html">Variables</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./logica.html">Lógica</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./condicionales.html"
+                  >Condicionales</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./ciclos.html">Ciclo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./functiones.html">Funciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./array.html">Array</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="primer" class="border t-40">
+      <div class="container text-center">
+        <h2>Ejercicios de Variables</h2>
+      </div>
+      <div class="container btnsle">
+        <p>Desplazar</p>
+        <ul>
+          <li class="btns active"><a href="#index">Index</a></li>
+          <li><a class="btns" href="#primer">1</a></li>
+          <li><a class="btns" href="#segundo">2</a></li>
+          <li><a class="btns" href="#tercer">3</a></li>
+          <li><a class="btns" href="#cuarto">4</a></li>
+          <li><a class="btns" href="#quinto">5</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container border p-5">
+      <h2 class="text-success">Primer Ejercicio</h2>
+      <p>
+        Escribe un programa que pida un número entero, y conteste al usuario:
+        “Has introducido el número (x), gracias”.
+      </p>
+      <div>
+        <form action="">
+          <div>
+            <input id="inputNumber" type="text" placeholder="Ingresar numero" />
+            <button id="btnNumber" class="btn btn-info">Ver número</button>
+          </div>
+        </form>
+      </div>
+      <br />
+      <p class="text-success">Resultado</p>
+      <div id="element" class="border border-success">...</div>
+    </div>
+    <br />
+    <!-- Segundo ejercicio de variables -->
+    <div id="segundo" class="container border p-5">
+      <div>
+        <h2 class="text-info">Segundo Ejercicio</h2>
+        <p>
+          Escribe un programa que pregunte el precio, el tanto por ciento de
+          descuento, y te diga el precio con descuento. Por ejemplo, si el
+          precio que introduce el usuario es 300 y el descuento 20, el programa
+          dirá que el precio final con descuento es de 240.
+        </p>
+      </div>
+      <div class="">
+        <form>
+          <div>
+            <input id="products" type="text" placeholder="Precio producto" />
+            <input id="discount" type="text" placeholder="Descuento " />
+            <button id="btn" class="btn btn-info">Descuento</button>
+          </div>
+        </form>
+      </div>
+      <br />
+      <p class="text-info">Resultado..</p>
+      <div id="elementDos" class="border border-info">...</div>
+    </div>
+    <br />
+    <!-- Tercel ejercicio de variables -->
+    <div id="tercer" class="container border p-5">
+      <h2 class="text-warning">Tercer Ejercicio</h2>
+      <p>
+        Suponiendo que 1 euro = 1.33250 dólares. Escribe un programa que pida al
+        usuario un número de dólares y calcule el cambio en euros.
+      </p>
+
+      <div>
+        <form name="convertidor">
+          <div>
+            <input id="input" type="text" name="dolar" placeholder="Dolar" />
+            <button id="button" class="btn btn-warning">Convertir</button>
+          </div>
+        </form>
+      </div>
+      <div>
+        <p class="text-warning">Resultado...</p>
+        <div id="elemenTotal" class="border border-warning">....</div>
+      </div>
+    </div>
+    <br />
+
+    <!-- Cuarto ejercico -->
+    <div id="cuarto" class="container border p-5">
+      <h2 class="text-dark">Cuarto Ejercicio</h2>
+      <p>
+        Escribir un programa que pida por teclado cuatro números y calcule y
+        presente la media de los cuatro
+      </p>
+      <div>
+        <form>
+          <div>
+            <input class="num1" type="text" />
+            <input class="num1" type="text" />
+            <input class="num1" type="text" />
+            <input class="num1" type="text" />
+            <button id="btnMedia" class="btn btn-dark">Ver media</button>
+          </div>
+        </form>
+      </div>
+      <br />
+      <div id="elementMedia" class="border border-dark">...</div>
+    </div>
+    <br />
+
+    <!-- Quinto ejercicio  -->
+
+    <div id="quinto" class="container border p-5">
+      <div class="">
+        <h1 class="text-primary">Quinto Ejercicio</h1>
+        <p>
+          Escribir un programa que pida por teclado dos resistencias y calcule y
+          presente la resistencia equivalente en paralelo (Req=(R1*R2)/(R1+R2)).
+        </p>
+      </div>
+      <form>
+        <div>
+          <input id="resistencia1" type="text" />
+          <input id="resistencia2" type="text" />
+          <button id="btnResist" class="btn btn-primary">Calcular</button>
+        </div>
+      </form>
+      <br />
+      <p class="text-primary">Resultado...</p>
+      <div id="elementReq" class="border border-primary">...</div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div class="container">
+      <h2>Cuál es la diferencia entre una variable y una constante?</h2>
+      <p>
+        La variable <span class="text-danger">var</span> pude ser modificadas y
+        re-declaradas dentro de su ámbito
+      </p>
+
+      <p>
+        La variable <span class="text-info">let</span> pueden ser modificadas,
+        pero no re-declaradas;
+      </p>
+
+      <p>
+        las variables <span class="text-primary">const</span> no pueden ser
+        modificadas ni re-declaradas.
+      </p>
+    </div>
+
+    <br />
+    <br />
+    <div class="container">
+      <h2>¿Cuándo se deberían usar ?</h2>
+    </div>
+    <footer class="bg-dark m-100 h-100">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et excepturi
+        dolor esse quis dicta neque recusandae doloremque, cumque harum impedit
+        reiciendis voluptates dolores iure alias sint animi aliquid, sequi
+        vitae?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et excepturi
+        dolor esse quis dicta neque recusandae doloremque, cumque harum impedit
+        reiciendis voluptates dolores iure alias sint animi aliquid, sequi
+        vitae?
+      </p>
+    </footer>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
+  </body>
+</html>
