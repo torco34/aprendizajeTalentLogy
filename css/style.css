@@ -6,34 +6,66 @@
 
 body {
   background-color: #ffffff00;
-  font-size: 1.5rem;
+  font-size: calc(0.7em + 0.7vw);
+  font-family: "Roboto Condensed", sans-serif;
 }
 html {
   font-size: 62.5%;
 }
+h2 {
+  font-weight: bold;
+  font-size: calc(1em + 1vw);
+}
+
 .paletas {
   background-color: #f5576c00;
   color: #f5576c8a;
   background-color: #f5576cd9;
 }
-/* secction header */
-.containerHeader {
-  position: fixed;
+
+/*SECTION THE HOME */
+
+.imgFondo {
+  background-image: url("../img/index2.jpg");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  top: 1rem;
+}
+.manto {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  background-color: rgb(41, 43, 43);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.containerHeader .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.containerHeader .logo h3 {
-  color: rgb(252, 249, 249);
+  justify-items: center;
+  align-content: center;
 }
 
+.manto h2 {
+  color: aliceblue;
+  font-size: calc(1.8em + 1.8vw);
+}
+.manto p {
+  color: aliceblue;
+  font-size: calc(0.8em + 0.8vw);
+}
+hr {
+  border-radius: 5px;
+  width: 50%;
+  border: solid 3px #f5576cd9;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/* sect */
+.navbar-brand h2 {
+  color: #e4939ed9;
+}
 .containerHeader ul {
   display: flex;
   align-items: center;
@@ -46,8 +78,8 @@ html {
   display: flex;
   text-decoration: none;
   margin: 1rem;
-  font-size: 1.5rem;
-  color: rgb(245, 240, 240);
+  /* font-size: 1.5rem; */
+  /* color: rgb(245, 240, 240); */
 }
 .containerHeader ul li a.actives {
   color: #f5576cd9;
