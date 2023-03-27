@@ -34,8 +34,37 @@ function sacarMediaArray() {
     resultadoMedia = resultadoSuma / array.length;
     elementArr3.innerHTML = `<p>La  suma:     ${resultadoSuma}</p>`;
   }
-  console.log(resultadoMedia, "media");
+
   elementArr2.innerHTML = `<p>La  media de la array:     ${resultadoMedia}</p>`;
 }
 
 arrBoton2.addEventListener("click", sacarMediaArray);
+
+// EJERCICIO DE ARRAY 3
+// Buscar un elemento dentro de un arreglo que nosotros le pedimos
+// por teclado. Indicar las posición donde se encuentra. Si hay más de
+// uno, indicar igualmente la posición. (FindIndex)
+
+// let arreglo = ["Banano", "Manzana", "Naranja"];
+// let arreglo = [2, 4, 1, 5, 3];
+
+// Me  ubica la longitud  según le indique > <
+const arrBoton3 = document.getElementById("arrBoton3");
+// const isLargeNumber = (element) => element === 5;
+// let arregloFinal = arreglo.findIndex(isLargeNumber);
+
+// console.log(arregloFinal);
+const elementArre = () => {
+  let arr = ["banano", "manzana", "peras", "pina", "uva"];
+  let array = arr.length;
+  console.log(array);
+  console.log(arr);
+  let frutas = prompt("Buscar frutas");
+  const busca = (element) => element === frutas;
+  let ver = arr.findIndex(busca);
+  console.log(ver);
+  console.log(arr);
+};
+elementArre();
+
+arrBoton3.addEventListener("click", elementArre);
