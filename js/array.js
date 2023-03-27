@@ -12,23 +12,30 @@ function array() {
   elementArr.innerHTML = `<p>  ${arr}  </p>`;
 }
 
-arrBoton.addEventListener("click", array);
 // Ejercicio 2 array
 // Crea un array o arreglo unidimensional con un tamaño de 10,
 //  inserta los valores numéricos que desees de la manera que quieras
 //  y muestra por pantalla la media de valores del array.
+const arrBoton2 = document.getElementById("arrBoton2");
 
-function mediaArray() {
-    const elementArr = document.getElementById("elementArr");
-    const arrBoton = document.getElementById("arrBoton");
+function sacarMediaArray() {
+  const elementArr2 = document.getElementById("elementArr2");
+  const elementArr3 = document.getElementById("elementArr3");
   let array = [];
-  let contador = 0;
-  for (let i = 0; i < 10; i++) {
+  let resultadoMedia = "";
+  let contadores = 0;
+  for (let i = 0; i < 5; i++) {
     array[i] = parseInt(prompt("Ingresar array"));
-    contador = contador + array[i];
-    console.log(contador, array);
-    resultado = contador / 10;
+
+    const resultadoSuma = array.reduce(
+      (contador, currentValue) => contador + currentValue,
+      contadores
+    );
+    resultadoMedia = resultadoSuma / array.length;
+    elementArr3.innerHTML = `<p>La  suma:     ${resultadoSuma}</p>`;
   }
-  console.log(contador, resultado);
+  console.log(resultadoMedia, "media");
+  elementArr2.innerHTML = `<p>La  media de la array:     ${resultadoMedia}</p>`;
 }
-mediaArray();
+
+arrBoton2.addEventListener("click", sacarMediaArray);
