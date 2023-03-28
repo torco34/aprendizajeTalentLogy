@@ -45,26 +45,54 @@ arrBoton2.addEventListener("click", sacarMediaArray);
 // por teclado. Indicar las posición donde se encuentra. Si hay más de
 // uno, indicar igualmente la posición. (FindIndex)
 
-// let arreglo = ["Banano", "Manzana", "Naranja"];
-// let arreglo = [2, 4, 1, 5, 3];
-
 // Me  ubica la longitud  según le indique > <
 const arrBoton3 = document.getElementById("arrBoton3");
+// let arreglo = [2, 4, 1, 5, 3];
 // const isLargeNumber = (element) => element === 5;
 // let arregloFinal = arreglo.findIndex(isLargeNumber);
 
-// console.log(arregloFinal);
 const elementArre = () => {
-  let arr = ["banano", "manzana", "peras", "pina", "uva"];
+  const element = document.getElementById("element");
+  const arrElement = document.getElementById("array");
+  let arr = ["banano", "manzana", "peras", "pinas", "uva", "fresa"];
   let array = arr.length;
-  console.log(array);
-  console.log(arr);
+  arrElement.innerHTML = `tiene ${array} elementos  <br> [  ${arr}, ]  `;
+
   let frutas = prompt("Buscar frutas");
   const busca = (element) => element === frutas;
   let ver = arr.findIndex(busca);
+  element.innerHTML = `la posición  es: ${ver}`;
   console.log(ver);
   console.log(arr);
 };
-elementArre();
 
 arrBoton3.addEventListener("click", elementArre);
+
+//Ejercicio de array 4
+
+// Suponga un array con N notas de 0 a 20, calcule el
+// promedio de aprobados y el promedio de los desaprobados
+// e indique la cantidad de aprobados y desaprobados.
+
+function promedio(nota) {
+  const notasAprobadas = nota.filter((nota) => nota >= 10);
+  const totalNotasAprobadas = notasAprobadas.length;
+  const sumaNatasAprobadas = notasAprobadas.reduce(
+    (acumulador, currentValue) => acumulador + currentValue
+  );
+  const promedioNotasAprobada = sumaNatasAprobadas / totalNotasAprobadas;
+
+  console.log(
+    `El promedio de notas aprobadas ${promedioNotasAprobada} cantidad notas aprobadas  ${totalNotasAprobadas}`
+  );
+
+  const notasDesaprobadas = nota.filter((nota) => nota < 10);
+  const sumaNotasDesaprobadas = notasDesaprobadas.reduce(
+    (acumulador, currentValue) => acumulador + currentValue
+  );
+  const promedioDesaprobada = sumaNotasDesaprobadas / notasDesaprobadas.length;
+  console.log(
+    `el promedio de la nota desaprobadas ${promedioDesaprobada} cantidad desaprobadas ${notasDesaprobadas.length}`
+  );
+}
+promedio([0, 1, 2, 3, 14, 15, 16, 17, 18, 19, 20]);
