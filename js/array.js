@@ -82,17 +82,51 @@ function promedio(nota) {
   );
   const promedioNotasAprobada = sumaNatasAprobadas / totalNotasAprobadas;
 
-  console.log(
-    `El promedio de notas aprobadas ${promedioNotasAprobada} cantidad notas aprobadas  ${totalNotasAprobadas}`
-  );
+  console
+    .log
+    // `El promedio de notas aprobadas ${promedioNotasAprobada} cantidad notas aprobadas  ${totalNotasAprobadas}`
+    ();
 
   const notasDesaprobadas = nota.filter((nota) => nota < 10);
   const sumaNotasDesaprobadas = notasDesaprobadas.reduce(
     (acumulador, currentValue) => acumulador + currentValue
   );
   const promedioDesaprobada = sumaNotasDesaprobadas / notasDesaprobadas.length;
-  console.log(
-    `el promedio de la nota desaprobadas ${promedioDesaprobada} cantidad desaprobadas ${notasDesaprobadas.length}`
-  );
+  console
+    .log
+    // `El promedio de la nota desaprobadas ${promedioDesaprobada} cantidad desaprobadas ${notasDesaprobadas.length}`
+    ();
 }
 promedio([0, 1, 2, 3, 14, 15, 16, 17, 18, 19, 20]);
+
+//EJERCICIO 5 ARRAY
+// Dado un vector de enteros, comprobar el mayor, el menor y por último la media de todos.
+
+function vectores(arr) {
+  let mayor = Math.max(...arr);
+  let menor = Math.min(...arr);
+  console.log(`Mayor, ${mayor}`);
+  console.log(`Menor, ${menor}`);
+  const suma = arr.reduce(
+    (acumulador, currentValue) => acumulador + currentValue
+  );
+  let media = suma / arr.length;
+  console.log(`Medio es ${media} `);
+  console.log(suma);
+  // ///////
+  let arrMax = arr[0];
+  for (let i = 0; i <= arr.length; i++) {
+    if (arr[i] > arrMax) {
+      arrMax = arr[i];
+    }
+  }
+  console.log(`max ${arrMax}`);
+  let arrMin = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < arrMin) {
+      arrMin = arr[i];
+    }
+  }
+  console.log(`min ${arrMin}`);
+}
+vectores([3, 5, 1, 6, 2]);
