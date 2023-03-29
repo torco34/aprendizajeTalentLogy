@@ -141,4 +141,16 @@ function stringNum() {
   });
   console.log(separarString);
 }
-stringNum();
+// stringNum();
+// EJERCICIO ARRAY 7
+// Recibes un Array de números y debes retornar un Array en
+// donde cada número sea multiplicado por dos (Utilizar métodos de array).
+
+function numMultip() {
+  let array = [2, 3, 5, 8];
+  const multiplicar = array.map(function (num) {
+    return num * 2;
+  });
+  console.log(multiplicar);
+}
+numMultip();
