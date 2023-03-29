@@ -171,3 +171,41 @@ function numeroImpar() {
   console.log(`valor del centro es; ${arr[centro]}`);
 }
 // numeroImpar();
+
+// EJERCICIO ARRAY 9
+// Queremos guardar los nombres y las edades de los alumnos de un curso.
+// Realiza un programa que introduzca el nombre y la edad de cada alumno.
+// El proceso de lectura de datos terminará cuando se introduzca como nombre un
+// asterisco (*) Al finalizar se mostrará los siguientes datos:
+// Todos los alumnos mayores de edad.
+// Encontrar la edad mayor y obtener los alumnos que posean dicha edad.
+
+function edadNombre() {
+  let alumnos = {};
+  let edadMayor = 0;
+  while (true) {
+    let nombre = prompt(`Introduzca el nombre o * para parar`);
+    if (nombre === "*") {
+      break;
+    }
+    const edad = parseInt(prompt(`Ingresar la edad de ${nombre}`));
+    alumnos[nombre] = edad;
+
+    if (edad > edadMayor) {
+      edadMayor = edad;
+    }
+  }
+  console.log(`Alumnos menores de edad:`);
+  for (const nombre in alumnos) {
+    if (alumnos[nombre] >= 18) {
+      console.log(nombre);
+    }
+  }
+  console.log(`Alumnos mayor de edad:`);
+  for (const nombre in alumnos) {
+    if (alumnos[nombre] === edadMayor) {
+      console.log(nombre);
+    }
+  }
+}
+edadNombre();
