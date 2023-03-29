@@ -153,4 +153,21 @@ function numMultip() {
   });
   console.log(multiplicar);
 }
-numMultip();
+// numMultip();
+// EJERCICIO ARRAY 8
+// Suponga un array con N números enteros generados
+// aleatoriamente y mostrados en pantalla,
+// N debe ser un número impar, mostrar en pantalla
+// el valor que ocupa el centro del array.
+
+function numeroImpar() {
+  const n = 7;
+  let arr = [];
+  for (let i = 0; i <= n; i++) {
+    arr.push(Math.floor(Math.random() * 100));
+  }
+  console.log(arr);
+  const centro = Math.floor(arr.length / 2);
+  console.log(`valor del centro es; ${arr[centro]}`);
+}
+// numeroImpar();
