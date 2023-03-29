@@ -130,3 +130,15 @@ function vectores(arr) {
   console.log(`min ${arrMin}`);
 }
 vectores([3, 5, 1, 6, 2]);
+// EJERCICO 6
+// ingresa un string de números del cual debes separar todos los
+//  números con una coma (,) y formar un array con sus valores.
+
+function stringNum() {
+  let string = "2,4,5,1,3";
+  let separarString = string.split(",").map(function (numero) {
+    return numero;
+  });
+  console.log(separarString);
+}
+stringNum();
