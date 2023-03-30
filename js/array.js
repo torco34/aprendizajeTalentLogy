@@ -181,7 +181,7 @@ function numeroImpar() {
 // Encontrar la edad mayor y obtener los alumnos que posean dicha edad.
 
 function edadNombre() {
-  let alumnos = {};
+  let alumnos = [];
   let edadMayor = 0;
   while (true) {
     let nombre = prompt(`Introduzca el nombre o * para parar`);
@@ -208,4 +208,43 @@ function edadNombre() {
     }
   }
 }
-edadNombre();
+// edadNombre();
+// EJERCICIO  10
+// Diseñar el algoritmo correspondiente a un programa, que:
+// Crea una tabla bidimensional de longitud 5x5 y nombre ‘matriz’.
+// Carga la tabla con valores numéricos enteros.
+// Suma todos los elementos de cada fila y todos los elementos
+// de cada columna visualizando los resultados en pantalla.
+
+function longitud() {
+  // creada la matriz de longitud
+  let matriz = [];
+  for (let i = 0; i <= 5; i++) {
+    let fila = new Array(5).fill(0);
+    matriz.push(fila);
+  }
+
+  // cargar la matriz con valores
+  for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 5; j++) {
+      const valores = parseInt();
+      prompt("Ingrese el valor para la posición [" + i + "][" + j + "]: ");
+      matriz[i][j] = valores;
+    }
+  }
+  // var suma_fila = matriz[i].reduce(function(a, b) { return a + b; }, 0);
+  for (let i = 0; i < 5; i++) {
+    let sumafila = matriz[i].reduce(function (contador, correntValue) {
+      return contador + correntValue;
+    }, 0);
+    console.log(`la suma es: ${i} ${sumafila}`);
+  }
+  // var suma_columna = matriz.reduce(function(a, b) { return a + b[j]; }, 0
+  for (let j = 0; j < 5; j++) {
+    const sumaColumnas = matriz.reduce(function (contador, correntValue) {
+      return contador + correntValue[j];
+    }, 0);
+    console.log(` suma columnas ${sumaColumnas}`);
+  }
+}
+// const ver = longitud();
