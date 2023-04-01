@@ -248,3 +248,32 @@ function longitud() {
   }
 }
 // const ver = longitud();
+
+// Pedimos el tamaño del array por teclado
+const tamaño = parseInt(prompt("Introduce el tamaño del array"));
+
+// Pedimos el número del que queremos los múltiplos por teclado
+const numero = parseInt(prompt("Introduce el número del que quieres los múltiplos"));
+
+// Creamos la función para rellenar el array con los múltiplos
+function rellenarArrayMultiplos(array, numero) {
+  for (let i = 0; i < array.length; i++) {
+    array[i] = numero * (i+1);
+  }
+}
+
+// Creamos la función para mostrar el contenido del array
+function mostrarArray(array) {
+  console.log(array);
+}
+
+// Creamos el array vacío con el tamaño indicado
+const miArray = new Array(tamaño);
+
+// Llamamos a la función para rellenar el array con los múltiplos
+rellenarArrayMultiplos(miArray, numero);
+
+// Llamamos a la función para mostrar el contenido del array
+mostrarArray(miArray);
+
+// ejercicio 11
