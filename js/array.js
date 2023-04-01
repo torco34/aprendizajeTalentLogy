@@ -249,31 +249,29 @@ function longitud() {
 }
 // const ver = longitud();
 
-// Pedimos el tamaño del array por teclado
-const tamaño = parseInt(prompt("Introduce el tamaño del array"));
+// ejercicio
+// columna visualizando los resultados en pantalla.
+// Crea un array o arreglo unidimensional donde tu le indiques
+//  el tamaño por teclado y crear una función que rellene el array
+// o arreglo con los múltiplos de un número pedido por teclado. Por ejemplo,
+// si defino un array de tamaño 5 y elijo un 3 en la función, el array
+//  contendrá 3, 6, 9, 12, 15. Mostrarlos por pantalla usando otra función distinta.
+//
+const cantidadArr = parseInt(prompt("Cantidad arr totot"));
 
-// Pedimos el número del que queremos los múltiplos por teclado
-const numero = parseInt(prompt("Introduce el número del que quieres los múltiplos"));
+const numeroArr = parseInt(prompt("numero divisor arr toto"));
 
-// Creamos la función para rellenar el array con los múltiplos
-function rellenarArrayMultiplos(array, numero) {
-  for (let i = 0; i < array.length; i++) {
-    array[i] = numero * (i+1);
+function multiplos(arr, numeroArr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = numeroArr * (i + 1);
   }
 }
 
-// Creamos la función para mostrar el contenido del array
-function mostrarArray(array) {
-  console.log(array);
+function mostrar(arr) {
+  console.log(arr);
 }
 
-// Creamos el array vacío con el tamaño indicado
-const miArray = new Array(tamaño);
+const miArr = new Array(cantidadArr);
 
-// Llamamos a la función para rellenar el array con los múltiplos
-rellenarArrayMultiplos(miArray, numero);
-
-// Llamamos a la función para mostrar el contenido del array
-mostrarArray(miArray);
-
-// ejercicio 11
+multiplos(miArr, numeroArr);
+mostrar(miArr);

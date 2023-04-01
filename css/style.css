@@ -122,7 +122,7 @@ hr {
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
-.foto1 {
+/* .foto1 {
 }
 
 .foto2 {
@@ -135,10 +135,9 @@ hr {
 }
 
 .foto6 {
-}
+} */
 .containerFoder {
-  background-color: #f5576c00;
   background-color: rgb(18, 19, 17);
   height: 70vh;
-  border: 1px solid rgba(221, 6, 106, 0.4);
+  color: rgba(221, 6, 106, 0.4);
 }
