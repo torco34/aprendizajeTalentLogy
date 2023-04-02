@@ -14,6 +14,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .container-circle {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 10px;
+        padding: 2rem;
+        margin-top: 3rem;
+      }
+
+      .div-img {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 300px;
+
+        /* border: 2px solid black; */
+        padding: 1rem;
+      }
+      .div-img img {
+        border: 1px solid #ddd;
+        overflow: hidden;
+        object-fit: cover;
+        width: 40%;
+        height: 100%;
+        box-shadow: 0px 10px 14px rgba(0, 0, 0.2);
+      }
+      .div-text-p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 70%;
+      }
+    </style>
   </head>
 
   <body>
@@ -100,6 +135,58 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
         </p>
+      </div>
+    </div>
+    <div class="container container-circle">
+      <div class="">
+        <div class="div-img">
+          <img
+            src="./img/index-reciclo.jpg"
+            alt="img computer"
+            class="rounded-circle"
+          />
+
+          <div class="div-text-p">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="div-img">
+          <img
+            src="./img/index-reciclo1.jpg"
+            alt="img computer"
+            class="rounded-circle"
+          />
+
+          <div class="div-text-p">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="div-img">
+          <img
+            src="./img/index-reciclo2.jpg"
+            alt="img computer"
+            class="rounded-circle"
+          />
+
+          <div class="div-text-p">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="container containerPadre">
