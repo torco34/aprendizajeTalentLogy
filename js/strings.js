@@ -112,7 +112,33 @@ let separar0 = estrin.split(",");
 
 // console.log(separar0, separar1 );
 
-// EJERCICIO 7 STRINGS
+//EJERCICIO 7 STRINGS
+//Escribir un programa que pregunte al usuario la fecha
+//de su nacimiento en formato dd/mm/aaaa y muestra por
+//pantalla, el día, el mes y el año. Adaptar el programa
+//anterior para que también funcione cuando el día o el mes
+//se introduzcan con un solo carácter.
+
+function fecha() {
+  let fecha = prompt(
+    `Por favor ingrese su fecha de nacimiento en formato dd/mm/aaaa"`
+  );
+  let seperar = fecha.split("/");
+  let dia = parseInt(seperar[0]);
+  let mes = parseInt(seperar[1]);
+  let ano = parseInt(seperar[2]);
+
+  if (dia.length == 1) {
+    dia = "0" + dia;
+  }
+  if (mes.length == 1) {
+    mes = "0" + mes;
+  }
+  console.log(` Su fecha de nacimiento es: ${dia}/${mes}/${ano}`);
+}
+// fecha();
+
+//EJERCICIO 8 STRINGS
 //Escribir un programa que pregunte por consola
 // por los productos de una cesta de la compra,
 // separados por comas, y muestre por pantalla
@@ -121,9 +147,35 @@ let separar0 = estrin.split(",");
 function productosLineaDistinta() {
   const productos = prompt("Ingresé productos separados con coma");
   const separaProducto = productos.split(",");
-
   for (let i = 0; i < separaProducto.length; i++) {
     console.log(separaProducto[i]);
   }
 }
 // productosLineaDistinta()
+
+//EJERCICIO 9 STRINGS
+// Que lea una oración desde el teclado y determine cuántas palabras tiene la oración
+
+function determinarPalabra() {
+  const oracion = prompt(`Ingresar oracion`);
+  // NOTA
+  //para dar es pacio de tener un espacio entre las comlla
+  let palabras = oracion.split(" ");
+  console.log(palabras);
+  const logPalabras = palabras.length;
+  console.log(logPalabras);
+}
+// determinarPalabra();
+//EJERCICIO 10 STRINGS
+//Crear Función que determine si un string numérico
+//  es capicua EJ: “12321”
+
+function capicua(b) {
+  let num = b;
+  let d = num.toString().split("");
+  let e = d.slice().reverse();
+  return d.join("") === e.join("");
+}
+
+// console.log(capicua("12321")); //true
+// console.log(capicua("12345")); //false
