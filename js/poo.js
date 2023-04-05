@@ -39,8 +39,34 @@ class Cuenta {
     this.saldo = nuevoSaldo;
   }
 }
-// console.log();
-const cantidad = new Cuenta(200);
-const reintegro = new Cuenta(300);
-console.log(cantidad);
-console.log(reintegro);
+//EJERCICIO 2 POO
+/*Crea una clase Contador con los métodos para incrementar y decrementar el contador. 
+La clase contendrá un constructor por defecto y los métodos getters y setters.
+ */
+class Contador {
+  constructor() {
+    this.valor = 0;
+  }
+
+  incrementar() {
+    this.valor++;
+  }
+
+  decrementar() {
+    this.valor--;
+  }
+  getValor() {
+    return this.valor;
+  }
+  setValor(nuevoValor) {
+    this.valor = nuevoValor;
+  }
+}
+const c = new Contador();
+console.log(c.getValor());
+c.incrementar();
+console.log(c.getValor());
+c.setValor(10);
+console.log(c.getValor());
+c.decrementar();
+console.log(c.getValor());
