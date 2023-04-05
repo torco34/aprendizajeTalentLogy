@@ -187,3 +187,38 @@ class Nombre {
 // const mensaje = new Nombre("julian", 19);
 // mensaje.datos();
 // mensaje.datosMayorOMenor();
+
+//EJERCICO 6 POO
+//Desarrollar un programa que cargue los datos de un triángulo.
+//Implementar una clase con los métodos para inicializar los atributos,
+//imprimir el valor del lado con un tamaño mayor y  el tipo de triángulo que es
+//(equilátero, isósceles o escaleno).
+
+class Triangulo {
+  constructor(a, b, c) {
+    this.a = a;
+    this.b = b;
+    this.c = c;
+  }
+  ladoMayor() {
+    if (this.a >= this.b && this.a >= this.c) {
+      return this.a;
+    } else if (this.b >= this.a && this.b >= this.c) {
+      return this.b;
+    } else {
+      return this.c;
+    }
+  }
+  tipoTriangulo() {
+    if (this.a === this.b && this.b === this.c) {
+      return "Equilátero";
+    } else if (this.a === this.b || this.a === this.c || this.b === this.c) {
+      return "Isósceles";
+    } else {
+      return "Escaleno";
+    }
+  }
+}
+// const triangulo = new Triangulo(3, 4, 5);
+// console.log(`El lado mayor es: ${triangulo.ladoMayor()}`);
+// console.log(`El triángulo es de tipo: ${triangulo.tipoTriangulo()}`);
