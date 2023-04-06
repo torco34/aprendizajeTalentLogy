@@ -5,7 +5,7 @@
 }
 
 body {
-  /* background-color: #ffffff00; */
+  background-color: #ffffff;
   font-size: calc(0.7em + 0.7vw);
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -14,7 +14,8 @@ html {
 }
 h2 {
   font-weight: bold;
-  font-size: calc(1em + 1vw);
+  font-family: monospace;
+  font-size: calc(0.7em + 0.8vw);
 }
 
 .paletas {
@@ -57,7 +58,6 @@ hr {
   border-radius: 5px;
   width: 50%;
   border: solid 3px #f5576cd9;
-  
 }
 /* SECTION DE LOGO*/
 .navbar-brand h2 {

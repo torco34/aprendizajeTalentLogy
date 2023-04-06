@@ -6,11 +6,11 @@ function viewNumber(e) {
   e.preventDefault();
   let value = inputNumber.value;
 
-  element.innerHTML = `Has introducido el numero ${value} Gracias`;
+  element.innerHTML = `Has introducido el numero ${value} `;
 }
 btnNumber.addEventListener("click", viewNumber);
 
-// SEGUNDO EJERCICIO
+// SEGUNDO EJERCICIO introducido 
 const inputProducts = document.getElementById("products");
 const inputDiscount = document.getElementById("discount");
 const elementDos = document.getElementById("elementDos");

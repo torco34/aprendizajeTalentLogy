@@ -154,45 +154,45 @@ const paresImpar = () => {
 //  y cuál es el menor. (Mostrar: mayor: persona 1, medio: persona 3, menor: persona 2)
 // if()
 const ingresarNumeros = () => {
-  let a = parseInt(prompt("p1"));
-  let b = parseInt(prompt("p2"));
-  let c = parseInt(prompt("p3"));
+  let p1 = parseInt(prompt("p1"));
+  let p2 = parseInt(prompt("p2"));
+  let p3 = parseInt(prompt("p3"));
   console.log(`Numeros ingresados ${a} ${b} ${c}`);
-
-  if (a < b && a < c) {
-    //
-    console.log(a, "menor a");
-  } else if (b < a && b < c) {
-    //
-    console.log(b, "menor b");
-  } else if (c < b && c < a) {
-    console.log(c, "menor c");
+  let mayor = 0;
+  let menor = 0;
+  let medio = 0;
+  if (p1 > p2 && p1 > p3) {
+    mayor = p1;
+    if (p2 > p3) {
+      medio = p3;
+      menor = p2;
+    } else {
+      medio = p2;
+      menor = p3;
+    }
+  } else if (p2 > p1 && p2 > p3) {
+    mayor = p2;
+    if (p1 > p3) {
+      medio = p1;
+      menor = p3;
+    } else {
+      medio = p3;
+      menor = p1;
+    }
+  } else {
+    mayor = p3;
+    if (p1 > p2) {
+      medio = p1;
+      menor = p2;
+    } else {
+      medio = p2;
+      menor = p1;
+    }
   }
 
-  if (a > b && a > c) {
-    console.log(a, "mayor a");
-  } else if (b > a && b > c) {
-    console.log(b, "mayor b");
-  } else if (c > b && c > a) {
-    console.log(c, "mayor c");
-  }
-  // 123
-  // abc
-  if (a < b && a > c) {
-    console.log(a, "media a");
-    // abc,
-  } else if (b > a && b < c) {
-    console.log(b, "media b");
-    // abc acb
-  } else if (c < a && c > b) {
-    console.log(c, "media c");
-    // abc bca
-  } else if (a > c && c < b) {
-    // console.log(`Numeros ingresados ${a} ${b} ${c}`);
-    console.log(b, "media c....");
-    // console.log("algo no esta bien");
-  }
+  console.log(`Moyor es: ${mayor} el medio es: ${medio} el menor es: ${menor}`);
 };
+
 ingresarNumeros();
 
 // 10 EJERCICIO DE CONDICIÓN

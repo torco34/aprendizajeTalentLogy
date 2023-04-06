@@ -1,0 +1,12 @@
+.strings {
+  position: relative;
+  top: 5rem;
+  text-align: center;
+}
+.border {
+  margin-top: 5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+.border h2 {
+  color: #f5576cd9;
+}

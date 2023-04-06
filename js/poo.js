@@ -222,3 +222,146 @@ class Triangulo {
 // const triangulo = new Triangulo(3, 4, 5);
 // console.log(`El lado mayor es: ${triangulo.ladoMayor()}`);
 // console.log(`El triángulo es de tipo: ${triangulo.tipoTriangulo()}`);
+
+//ejercicio 7
+//Realizar una clase que administre una
+//agenda. Se debe almacenar para cada contacto
+// el nombre, el teléfono y el email. Además deberá
+//mostrar un menú con las siguientes opciones
+//Añadir contacto
+//Lista de contactos
+//Buscar contacto
+//Editar contacto
+//Cerrar agenda
+
+class Agenda {
+  constructor() {
+    this.contactos = [];
+  }
+  // añadir contacto
+  agregarContacto(nombre, telefono, email) {
+    this.contactos.push({
+      nombre: nombre,
+      telefono: telefono,
+      email: email,
+    });
+    console.log("Contacto añadido con éxito.");
+  }
+  //  mostrar la lista de contactos
+  mostrarContactos() {
+    if (this.contactos.length === 0) {
+      console.log("No hay contactos en la agenda.");
+    } else {
+      console.log("Lista de contactos:");
+      this.contactos.forEach((contacto) => {
+        console.log(
+          `- ${contacto.nombre}, ${contacto.telefono}, ${contacto.email}`
+        );
+      });
+    }
+  }
+
+  // Método para buscar un contacto por nombre
+  buscarContacto(nombre) {
+    // find de vuelve según condición en este caso nombre
+    const contactoEncontrado = this.contactos.find(
+      (contacto) => contacto.nombre === nombre
+    );
+    if (contactoEncontrado) {
+      console.log(
+        `Contacto encontrado: ${contactoEncontrado.nombre}, ${contactoEncontrado.telefono}, ${contactoEncontrado.email}`
+      );
+    } else {
+      console.log(`No se encontró ningún contacto con el nombre ${nombre}.`);
+    }
+  }
+  // Método para editar un contacto por nombre
+  editarContacto(nombre, nuevoTelefono, nuevoEmail) {
+    const contactoEncontrado = this.contactos.find(
+      (contacto) => contacto.nombre === nombre
+    );
+    if (contactoEncontrado) {
+      contactoEncontrado.telefono = nuevoTelefono;
+      contactoEncontrado.email = nuevoEmail;
+      console.log(`Contacto ${nombre} actualizado con éxito.`);
+    } else {
+      console.log(`No se encontró ningún contacto con el nombre ${nombre}.`);
+    }
+  }
+  // Método para mostrar el menú de opciones
+  mostrarMenu() {
+    console.log("");
+    console.log("Seleccione una opción:");
+    console.log("1. Añadir contacto");
+    console.log("2. Lista de contactos");
+    console.log("3. Buscar contacto");
+    console.log("4. Editar contacto");
+    console.log("5. Cerrar agenda");
+  }
+}
+// Ejemplo de uso de la clase Agenda
+const miAgenda = new Agenda();
+
+miAgenda.mostrarMenu();
+
+// Supongamos que el usuario selecciona la opción 1 para añadir un contacto
+miAgenda.agregarContacto("Juan Pérez", "123456789", "juan.perez@example.com");
+
+// Supongamos que el usuario selecciona la opción 2 para mostrar la lista de contactos
+miAgenda.mostrarContactos();
+
+// Supongamos que el usuario selecciona la opción 3 para buscar un contacto por nombre
+miAgenda.buscarContacto("Juan Pérez");
+
+// Supongamos que el usuario selecciona la opción 4 para editar un contacto por nombre
+miAgenda.editarContacto(
+  "Juan Pérez",
+  "987654321",
+  "juan.perez.new@example.com"
+);
+
+// Supongamos que el usuario selecciona la opción 5 para cerrar la agenda
+console.log("Agenda cerrada.");
+
+//EJERCICIO 8
+//Realizar un programa en el cual se declaran dos valores
+// enteros por teclado utilizando el método constructor. Calcular
+// después la suma, resta, multiplicación y división. Utilizar un método
+// para cada una e imprimir los resultados obtenidos. Llamar a la clase Calculadora.
+
+class Calculadora {
+  constructor(valor1, valor2) {
+    this.valor1 = valor1;
+    this.valor2 = valor2;
+  }
+
+  sumar() {
+    return this.valor1 + this.valor2;
+  }
+
+  restar() {
+    return this.valor1 - this.valor2;
+  }
+
+  multiplicar() {
+    return this.valor1 * this.valor2;
+  }
+
+  dividir() {
+    if (this.valor2 === 0) {
+      return "No se puede dividir por cero";
+    } else {
+      return this.valor1 / this.valor2;
+    }
+  }
+}
+
+// const valor1 = parseInt(prompt("Ingrese el primer valor entero: "));
+// const valor2 = parseInt(prompt("Ingrese el segundo valor entero: "));
+
+// const calculadora = new Calculadora(valor1, valor2);
+
+// console.log("Suma:", calculadora.sumar());
+// console.log("Resta:", calculadora.restar());
+// console.log("Multiplicación:", calculadora.multiplicar());
+// console.log("División:", calculadora.dividir());
