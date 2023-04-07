@@ -13,6 +13,7 @@
     <title>lógica</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/logica.css" />
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark fixed-top">
@@ -73,7 +74,7 @@
                 <a class="nav-link" href="./array.html">Array</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./strings.html">strings</a>
+                <a class="nav-link" href="./strings.html">Strings</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./poo.html">Poo</a>
@@ -92,173 +93,270 @@
         </div>
       </div>
     </nav>
-    <br />
-    <div class="container border p-5">
-      <p>primeros</p>
-      <p class="text-center">
-        Pedir 2 números al usuario y sumarlos, restarlos, multiplicarlos y
-        dividirlos.
-      </p>
-      <br />
-      <button id="btnOne" class="btn btn-info">IngresarNumeros</button>
-      <br />
-      <hr />
-      <div id="elementOne" class="border">...</div>
+    <div class="">
+      <div class="div-container-img">
+        <img src="../img/logica.jpg" alt="" />
+        <h2 class="div-h2-img">Ejercicio de lógica</h2>
+        <p class="div-p-img">
+          Consiste en la creación de un algoritmo de programación que contenga
+          una serie de instrucciones para ejecutar una tarea.
+        </p>
+        <a class="div-boton-img btn btn-dark" href="#medio">ejercicios </a>
+      </div>
     </div>
-    <br />
-    <div class="container border p-5">
-      <h2>Segundo</h2>
-      <p>Convertir Grados Celsius a Grados Fahrenheit.</p>
-    </div>
-    <br />
-    <div class="container border p-5">
-      <h2>Tercer</h2>
-      <p>
-        Sacar la hipotenusa de un triángulo rectángulo, pidiendo al usuario el
-        valor de los 2 catetos.
-      </p>
-      <button id="catetos" class="btn btn-info">Ingrese catetos</button>
-    </div>
-    <br />
-    <div class="container border p-5">
-      <h2>Cuarto</h2>
-      <p>Hacer un Programa que calcule longitudes de Circunferencia.</p>
-    </div>
-    <br />
-    <div class="border container p-5">
-      <h2>Quinto</h2>
-      <p>Hacer un Programa que calcule áreas de trapecios.</p>
-      <button id="btnTrapecio" class="btn btn-info">trapecios</button>
-    </div>
-    <br />
-    <div class="border container p-5">
-      <h2>Sexto</h2>
-      <p>Calcule la media aritmética de 3 números cualesquiera.</p>
-      <button id="btnArismet" class="btn btn-info">calcularMedia</button>
-    </div>
-    <br />
+    <section id="medio" class="container p-5 section grid-container">
+      <div class="border rounded border-3 p-5">
+        <div class="p-5">
+          <h2>#1</h2>
+          <p class="">
+            Pedir 2 números al usuario y sumarlos, restarlos, multiplicarlos y
+            dividirlos.
+          </p>
+          <div>
+            <button id="btnOne" class="btn btn-dark">IngresarNumeros</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-3 rounded border p-5">
+        <div class="p-5">
+          <h2>2</h2>
+          <p>Convertir Grados Celsius a Grados Fahrenheit.</p>
+          <div>
+            <button id="btnOne" class="btn btn-dark">IngresarNumeros</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>#3</h2>
+          <p>
+            Sacar la hipotenusa de un triángulo rectángulo, pidiendo al usuario
+            el valor de los 2 catetos.
+          </p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="border container p-5">
-      <h2>Septimo</h2>
-      <p>
-        Una tienda ofrece un descuento del 15% sobre el total de la compra y un
-        cliente desea saber cuánto deberá pagar finalmente por su compra.
-      </p>
-      <button id="btnArismet" class="btn btn-info">calcularMedia</button>
-    </div>
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>#4</h2>
+          <p>Hacer un Programa que calcule longitudes de Circunferencia.</p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
 
-    <br />
-    <div class="border container p-5">
-      <h2>Octavo</h2>
-      <p>
-        Dadas las horas trabajadas de una persona y el valor por hora. Calcular
-        su salario e imprimirlo.
-      </p>
-      <button id="btnTrapecio" class="btn btn-info">trapecios</button>
-    </div>
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>5</h2>
+          <p>Hacer un Programa que calcule áreas de trapecios.</p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
 
-    <br />
-    <div class="border container p-5">
-      <h2>Noveno</h2>
-      <p>
-        Calcular el nuevo salario de un obrero, si obtuvo un incremento del 25%
-        sobre su salario anterior.
-      </p>
-      <button id="btnTrapecio" class="btn btn-info">trapecios</button>
-    </div>
-    <br />
-    <div class="border container p-5">
-      <h2>10</h2>
-      <p>
-        Comprobar a través de un programa si un alumno aprobó o no un examen
-        (Aprueba si su nota es mayor a 10.5).
-      </p>
-      <button id="btnNota" class="btn btn-info">ingresar</button>
-    </div>
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>6</h2>
+          <p>Calcule la media aritmética de 3 números cualesquiera.</p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
 
-    <br />
-    <div class="border container p-5">
-      <h2>11</h2>
-      <p>
-        Comprobar si un número digitado por el usuario es positivo o negativo.
-      </p>
-      <button id="btnPositive" class="btn btn-info">ingresarNumero</button>
-    </div>
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>Septimo</h2>
+          <p>
+            Una tienda ofrece un descuento del 15% sobre el total de la compra y
+            un cliente desea saber cuánto deberá pagar finalmente por su compra.
+          </p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
 
-    <br />
-    <div class="border container p-5">
-      <h2>12</h2>
-      <p>
-        Visualizar la tarifa de la luz según el gasto de corriente eléctrica.
-        Para un gasto menor de 1.000Kwxh la tarifa es 1.2, entre 1.OOO y
-        1.850Kwxh es 1.0 y mayor de 1.85OKwxh 0.9.
-      </p>
-      <button id="btnTarifa" class="btn btn-info">VerTarifa</button>
-    </div>
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>Octavo</h2>
+          <p>
+            Dadas las horas trabajadas de una persona y el valor por hora.
+            Calcular su salario e imprimirlo.
+          </p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
 
-    <br />
-    <div class="border container p-5">
-      <h2>13</h2>
-      <p>Determinar si un número es par, impar.</p>
-      <button id="btnPar" class="btn btn-info">VerTarifa</button>
-    </div>
-    <br />
-    <div class="border container p-5">
-      <h2>14</h2>
-      <p>
-        Calcular el mayor de dos números leídos del teclado y visualizarlo en
-        pantalla..
-      </p>
-      <button id="btnCalcular" class="btn btn-info">IngresarNumero</button>
-    </div>
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>Noveno</h2>
+          <p>
+            Calcular el nuevo salario de un obrero, si obtuvo un incremento del
+            25% sobre su salario anterior.
+          </p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
 
-    <br />
-    <div class="border container p-5">
-      <h2>15</h2>
-      <p>
-        Ingrese un número y calcule e imprima su raíz cuadrada. Si el número es
-        negativo imprima el número y un mensaje que diga “tiene raíz
-        imaginaria”.
-      </p>
-      <button id="btnRaiz" class="btn btn-info">raiz</button>
-    </div>
-    <br />
-    <div class="border container p-5">
-      <h2>16</h2>
-      <p>
-        Ingresar por teclado el nombre y el signo de cualquier persona e
-        imprima, el nombre sólo si la persona es signo Aries, caso contrario
-        imprima no es signo Aries.
-      </p>
-      <button id="btnSigno" class="btn btn-info">signos</button>
-    </div>
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>10</h2>
+          <p>
+            Comprobar a través de un programa si un alumno aprobó o no un examen
+            (Aprueba si su nota es mayor a 10.5).
+          </p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
 
-    <br />
-    <div class="border container p-5">
-      <h2>17</h2>
-      <p>
-        Ingresar por teclado el nombre, la edad y el sexo de cualquier persona e
-        imprima, solo si la persona es de sexo masculino y mayor de edad, el
-        nombre de la persona.
-      </p>
-      <button id="btnEdad" class="btn btn-info">signos</button>
-    </div>
-    <br />
-    <div class="border container p-5">
-      <h2>18</h2>
-      <p>
-        Una distribuidora de motocicletas tiene una promoción de fin de año qué
-        consiste en lo siguiente. Las motos marca Honda tienen un descuento del
-        5%, las marcas Yamaha del 8% y las Suzuki del 10%, las otras marcas 2%
-      </p>
-      <button id="btnDescuento" class="btn btn-info">signos</button>
-    </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>11</h2>
+          <p>
+            Comprobar si un número digitado por el usuario es positivo o
+            negativo.
+          </p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>12</h2>
+          <p>
+            Visualizar la tarifa de la luz según el gasto de corriente
+            eléctrica. Para un gasto menor de 1.000Kwxh la tarifa es 1.2, entre
+            1.OOO y 1.850Kwxh es 1.0 y mayor de 1.85OKwxh 0.9.
+          </p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>13</h2>
+          <p>Determinar si un número es par, impar.</p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded border border-2 p-5">
+        <div class="-5">
+          <h2>14</h2>
+          <p>
+            Calcular el mayor de dos números leídos del teclado y visualizarlo
+            en pantalla..
+          </p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>15</h2>
+          <p>
+            Ingrese un número y calcule e imprima su raíz cuadrada. Si el número
+            es negativo imprima el número y un mensaje que diga “tiene raíz
+            imaginaria”.
+          </p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>16</h2>
+          <p>
+            Ingresar por teclado el nombre y el signo de cualquier persona e
+            imprima, el nombre sólo si la persona es signo Aries, caso contrario
+            imprima no es signo Aries.
+          </p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>17</h2>
+          <p>
+            Ingresar por teclado el nombre, la edad y el sexo de cualquier
+            persona e imprima, solo si la persona es de sexo masculino y mayor
+            de edad, el nombre de la persona.
+          </p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded border border-2 p-5">
+        <div class="p-5">
+          <h2>18</h2>
+          <p>
+            Una distribuidora de motocicletas tiene una promoción de fin de año
+            qué consiste en lo siguiente. Las motos marca Honda tienen un
+            descuento del 5%, las marcas Yamaha del 8% y las Suzuki del 10%, las
+            otras marcas 2%
+          </p>
+          <div>
+            <button id="catetos" class="btn btn-dark">Ingrese catetos</button>
+            <p id="elementOne">...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="">
+      <div class="container-cente">
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio</p>
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio</p>
+        </div>
+      </div>
+    </footer>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <!-- <script src="../js/logica.js"></script> -->
+    <script src="../js/logica.js"></script>
   </body>
 </html>
