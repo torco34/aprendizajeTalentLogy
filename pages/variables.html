@@ -12,13 +12,16 @@
     />
     <title>Document</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/variables.css" />
+    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+    <link rel="stylesheet" href="../css/univesal.css" />
+    <!-- <link rel="stylesheet" href="../css/variables.css" /> -->
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="../index.html"><h2>TalentLogy</h2></a>
+        <a class="navbar-brand TalentLogy" href="../index.html"
+          ><h2>TalentLogy</h2></a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -74,7 +77,7 @@
                 <a class="nav-link" href="./array.html">Array</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./strings.html">strings</a>
+                <a class="nav-link" href="./strings.html">Strings</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./poo.html">Poo</a>
@@ -87,37 +90,43 @@
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-success" type="submit">Search</button>
+              <button class="btn btn-dark" type="submit">Search</button>
             </form>
           </div>
         </div>
       </div>
     </nav>
     <!-- fotos  portada -->
-    <div id="index" class="container-img">
-      <div class="div-img-varia">
-        <img src="../img/variable.jpg" alt="" />
-        <h2 class="h-img-text">Ejercicios de Variables</h2>
-
-        <p class="p-img-text">
-          Una variable es un elemento que se emplea para almacenar y hacer
-          referencia a otro valor
-        </p>
+    <section>
+      <div id="index">
+        <div class="div-img-variable">
+          <img src="../img/variable.jpg" alt="" />
+          <div class="div-h2-p-boton-img">
+            <h2>Ejercicios de Variables</h2>
+            <p>
+              Una variable es un elemento que se emplea para almacenar y hacer
+              referencia a otro valor
+            </p>
+            <a class="btn btn-dark" href="#primer"> Ver ejercicios </a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
     <!-- boton desplazamiento -->
 
-    <div class="btn-desplazar">
-      <a href="#index">
-        <img src="../img/boton.svg" alt="" />
-      </a>
-      <a href="#foter">
-        <img src="../img/botonb.svg" alt="" />
-      </a>
+    <div class="div-btn-desplazar">
+      <div>
+        <a href="#index">
+          <img src="../img/botonb.svg" alt="" />
+        </a>
+        <a href="#fooder">
+          <img src="../img/boton.svg" alt="" />
+        </a>
+      </div>
     </div>
     <!-- primer ejercicio -->
-    <div class="container constainer-ejercicio">
-      <div id="primero" class="container height border p-5">
+    <div id="primer" class="container constainer-ejercicio">
+      <div id="primero" class="container height border border-3 p-5">
         <h2 class="">Primer Ejercicio</h2>
         <p>
           Escribe un programa que pida un número entero, y conteste al usuario:
@@ -137,11 +146,11 @@
         </div>
         <br />
         <p class="">Resultado</p>
-        <div id="element" class="border">...</div>
+        <div id="element"><p>...</p></div>
       </div>
       <br />
       <!-- Segundo ejercicio de variables -->
-      <div id="segundo" class="container border p-5">
+      <div id="segundo" class="container border border-3 p-5">
         <div>
           <h2>Segundo Ejercicio</h2>
           <p>
@@ -162,11 +171,11 @@
         </div>
         <br />
         <p>Resultado..</p>
-        <div id="elementDos" class="border"><p>..</p></div>
+        <div id="element"><p>...</p></div>
       </div>
       <br />
       <!-- Tercel ejercicio de variables -->
-      <div id="tercer" class="container border p-5">
+      <div class="container border border-3 p-5">
         <h2>Tercer Ejercicio</h2>
         <p>
           Suponiendo que 1 euro = 1.33250 dólares. Escribe un programa que pida
@@ -183,13 +192,13 @@
         </div>
         <div>
           <p>Resultado...</p>
-          <div id="elemenTotal" class="border"><p>..</p></div>
+          <div id="element"><p>...</p></div>
         </div>
       </div>
       <br />
 
       <!-- Cuarto ejercico -->
-      <div class="container border p-5">
+      <div class="container border border-3 p-5">
         <h2>Cuarto Ejercicio</h2>
         <p>
           Escribir un programa que pida por teclado cuatro números y calcule y
@@ -207,13 +216,13 @@
           </form>
         </div>
         <br />
-        <div id="elementMedia" class="border"><p>...</p></div>
+        <div id="element"><p>...</p></div>
       </div>
-      <br />
 
+      <br />
       <!-- Quinto ejercicio  -->
 
-      <div id="quinto" class="container border p-5">
+      <div id="fooder" class="container border border-3 p-5">
         <div class="">
           <h1>Quinto Ejercicio</h1>
           <p>
@@ -231,10 +240,10 @@
         </form>
         <br />
         <p>Resultado...</p>
-        <div id="elementReq" class="border"><p>....</p></div>
+        <div id="element"><p>...</p></div>
       </div>
-
-      <div id="#" class="container border">
+      <br />
+      <div class="container border border-3 p-5">
         <h2>Cuál es la diferencia entre una variable y una constante?</h2>
         <p>
           La variable <span class="text-danger">var</span> pude ser modificadas
@@ -251,25 +260,30 @@
           modificadas ni re-declaradas.
         </p>
       </div>
-
-      <br />
-      <br />
-      <div class="container">
-        <h2>¿Cuándo se deberían usar ?</h2>
-      </div>
     </div>
-    <footer class="">
-      <div class="container-cente">
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio</p>
+    <br />
+    <br />
+    <br />
+    <footer class="bg-dark">
+      <div class="container-iconos">
+        <div class="div-iconos">
+          <div class="div2-iconos">
+            <a href="#">
+              <img src="../img/linkedin.svg" alt="" />
+            </a>
+
+            <a href="">
+              <img src="../img/github.svg" alt="" />
+            </a>
+          </div>
         </div>
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio</p>
+        <div class="div-parrafos">
+          <p>Pagina hecho por Torcoroma Arias Ascanio</p>
+          <p>torcoromaarias@gmail.com</p>
         </div>
       </div>
     </footer>
 
-    <footer class="bg-dark m-100 h-100"></footer>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script src="../js/main.js"></script>
   </body>

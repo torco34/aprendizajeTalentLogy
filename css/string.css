@@ -20,7 +20,7 @@
 }
 .div-img-string img {
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   object-fit: cover;
   display: block;
 }
@@ -31,20 +31,25 @@
   position: absolute;
   top: 0;
   right: 0;
-  background-image: linear-gradient(rgba(232, 155, 155, 0.5), #050506);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), #050506);
 }
-.p-text-img,
-.h-text-img {
+.div-h2-p-boton-img-strin {
   position: absolute;
   color: #fff;
   font-family: monospace;
   display: block;
+  text-align: center;
 }
-.p-text-img {
-  top: 250px;
-  color: #f9f6f6;
+.div-h2-p-boton-img-strin h2 {
+  font-size: calc(1.5em + 1.5vw);
 }
-.btn{
+.div-h2-p-boton-img-strin a {
+  background-color: #f5576c8a;
+  font-size: calc(0.4em + 0.4vw);
+  padding: 1rem;
+  font-weight: bold;
+}
+.btn {
   background-color: #f5576c8a;
   font-size: calc(0.4em + 0.4vw);
 }

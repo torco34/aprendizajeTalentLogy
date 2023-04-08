@@ -1,4 +1,4 @@
-.div-container-img {
+/* .div-container-img {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -21,26 +21,26 @@
   right: 0;
   background-image: linear-gradient(rgba(252, 235, 235, 0.5), #050506);
 }
-.div-h2-img,
-.div-p-img,
-.div-boton-img {
+.div-h2-p-boton-img {
   position: absolute;
   color: #fff;
   font-family: monospace;
   display: block;
+  text-align: center;
 }
-.div-p-img {
-  top: 420px;
-  color: #fff;
+.div-h2-p-boton-img h2 {
+  font-size: calc(1.5em + 1.5vw);
 }
-.div-boton-img {
-  top: 460px;
-  background-color: #cf6666;
+.div-h2-p-boton-img a {
+  background-color: #f5576c8a;
+  font-size: calc(0.4em + 0.4vw);
+  padding: 1rem;
+  font-weight: bold;
 }
 .btn {
   background-color: #f5576c8a;
-  font-size: calc(0.4em + 0.4vw);
-}
+  font-size: calc(0.5em + 0.5vw);
+} */
 /* body */
 .grid-container {
   display: grid;

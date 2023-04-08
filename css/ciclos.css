@@ -1,4 +1,4 @@
-.div-containe-img {
+.div-ciclo-img {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -6,13 +6,13 @@
   justify-content: center;
   align-items: center;
 }
-.div-containe-img img {
+.div-ciclo-img img {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   object-fit: cover;
   display: block;
 }
-.div-containe-img:before {
+.div-ciclo-img:before {
   content: "";
   width: 100%;
   height: 100%;
@@ -21,29 +21,30 @@
   right: 0;
   background-image: linear-gradient(rgba(252, 250, 250, 0.5), #050506);
 }
-.div-h2-p-boton-condi {
+.div-h2-p-boto-img {
   position: absolute;
   color: #fff;
   font-family: monospace;
   display: block;
   text-align: center;
 }
-.div-h2-p-boton-condi h2 {
+.div-h2-p-boto-img h2 {
   font-size: calc(1.5em + 1.5vw);
 }
-.div-h2-p-boton-condi a {
-  background-color: #f5576c8a;
+.div-h2-p-boto-img a {
+  background-color: rgba(245, 87, 108, 0.541);
   font-size: calc(0.4em + 0.4vw);
   padding: 1rem;
   font-weight: bold;
 }
-.btn {
-  background-color: #f5576c8a;
-  font-size: calc(0.4em + 0.4vw);
-}
-.grid-container {
+.container-text-ciclo {
   display: grid;
   width: 70%;
-  
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.color:hover {
+  box-shadow: 0px 10px 14px rgb(244, 188, 188);
+  color: #a49c9c;
+  cursor: pointer;
 }

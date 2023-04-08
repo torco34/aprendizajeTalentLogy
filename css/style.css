@@ -17,7 +17,10 @@ h2 {
   font-family: monospace;
   font-size: calc(0.7em + 0.8vw);
 }
-
+.btn {
+  background-color: #f5576c8a;
+  font-size: calc(0.5em + 0.5vw);
+}
 .paletas {
   background-color: #f5576c00;
   color: #f5576c8a;
@@ -58,6 +61,10 @@ hr {
   border-radius: 5px;
   width: 50%;
   border: solid 3px #f5576cd9;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 /* SECTION DE LOGO*/
 .navbar-brand h2 {
@@ -152,6 +159,10 @@ hr {
   position: relative;
   z-index: 5;
   font-size: calc(0.5em + 0.5vw);
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
 }
 
 .formulario input {
@@ -183,6 +194,10 @@ hr {
   width: 50%;
   letter-spacing: 1px;
   margin: 10px 0px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 .informacion {
   display: grid;
@@ -235,6 +250,11 @@ hr {
   object-fit: cover;
   border: 1px solid #ddd;
   box-shadow: 0px 10px 14px rgba(0, 0, 0.2);
+  -webkit-filter: grayscale(30%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .img img:hover {
   filter: grayscale(100%);
