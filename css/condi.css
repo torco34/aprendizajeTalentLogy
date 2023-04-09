@@ -1,33 +1,4 @@
-.div-containe-img {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.div-containe-img img {
-  width: 100%;
-  height: 70vh;
-  object-fit: cover;
-  display: block;
-}
-.div-containe-img:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-image: linear-gradient(rgba(252, 250, 250, 0.5), #050506);
-}
-.div-h2-p-boton-condi {
-  position: absolute;
-  color: #fff;
-  font-family: monospace;
-  display: block;
-  text-align: center;
-}
+/* 
 .div-h2-p-boton-condi h2 {
   font-size: calc(1.5em + 1.5vw);
 }
@@ -40,10 +11,5 @@
 .btn {
   background-color: #f5576c8a;
   font-size: calc(0.4em + 0.4vw);
-}
-.grid-container {
-  display: grid;
-  width: 70%;
-  
-  gap: 1rem;
-}
+} */
+

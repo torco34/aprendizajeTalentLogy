@@ -96,9 +96,9 @@
         </div>
       </div>
     </nav>
-    <!-- fotos  portada -->
-    <section>
-      <div id="index">
+    <!-- fotos  class="container-fluid" portada -->
+    <section id="index">
+      <div>
         <div class="div-img-variable">
           <img src="../img/variable.jpg" alt="" />
           <div class="div-h2-p-boton-img">
@@ -113,157 +113,171 @@
       </div>
     </section>
     <!-- boton desplazamiento -->
-
-    <div class="div-btn-desplazar">
-      <div>
-        <a href="#index">
-          <img src="../img/botonb.svg" alt="" />
-        </a>
-        <a href="#fooder">
-          <img src="../img/boton.svg" alt="" />
-        </a>
-      </div>
-    </div>
-    <!-- primer ejercicio -->
-    <div id="primer" class="container constainer-ejercicio">
-      <div id="primero" class="container height border border-3 p-5">
-        <h2 class="">Primer Ejercicio</h2>
-        <p>
-          Escribe un programa que pida un número entero, y conteste al usuario:
-          “Has introducido el número (x), gracias”.
-        </p>
+    <section>
+      <div class="div-btn-desplazar">
         <div>
-          <form action="">
-            <div>
-              <input
-                id="inputNumber"
-                type="text"
-                placeholder="Ingresar numero"
-              />
-              <button id="btnNumber" class="btn btn-dark">Ver número</button>
-            </div>
-          </form>
+          <a href="#index">
+            <img src="../img/botonb.svg" alt="" />
+          </a>
+          <a href="#footer">
+            <img src="../img/boton.svg" alt="" />
+          </a>
         </div>
-        <br />
-        <p class="">Resultado</p>
-        <div id="element"><p>...</p></div>
       </div>
-      <br />
-      <!-- Segundo ejercicio de variables -->
-      <div id="segundo" class="container border border-3 p-5">
-        <div>
-          <h2>Segundo Ejercicio</h2>
+    </section>
+    <!-- primer ejercicio body -->
+    <section>
+      <div id="primer" class="container grid-container constainer-ejercicio">
+        <div class="container border border-3 p-5">
+          <h2>Primer Ejercicio</h2>
           <p>
-            Escribe un programa que pregunte el precio, el tanto por ciento de
-            descuento, y te diga el precio con descuento. Por ejemplo, si el
-            precio que introduce el usuario es 300 y el descuento 20, el
-            programa dirá que el precio final con descuento es de 240.
+            Escribe un programa que pida un número entero, y conteste al
+            usuario: “Has introducido el número (x), gracias”.
           </p>
+          <div>
+            <form action="">
+              <div>
+                <input
+                  id="inputNumber"
+                  type="text"
+                  placeholder="Ingresar numero"
+                />
+                <br />
+                <br />
+                <button id="btnNumber" class="btn btn-dark">Ver número</button>
+              </div>
+            </form>
+          </div>
+          <br />
+          <p class="">Resultado</p>
+          <div id="element"><p>...</p></div>
         </div>
-        <div class="">
+
+        <!-- Segundo ejercicio de variables -->
+        <div id="segundo" class="container border border-3 p-5">
+          <div>
+            <h2>Segundo Ejercicio</h2>
+            <p>
+              Escribe un programa que pregunte el precio, el tanto por ciento de
+              descuento, y te diga el precio con descuento. Por ejemplo, si el
+              precio que introduce el usuario es 300 y el descuento 20, el
+              programa dirá que el precio final con descuento es de 240.
+            </p>
+          </div>
+          <div class="">
+            <form>
+              <div>
+                <input
+                  id="products"
+                  type="text"
+                  placeholder="Precio producto"
+                />
+                <input id="discount" type="text" placeholder="Descuento " />
+                <br />
+
+                <button id="btn" class="btn btn-dark">Descuento</button>
+              </div>
+            </form>
+          </div>
+          <br />
+          <p>Resultado..</p>
+          <div id="element"><p>...</p></div>
+        </div>
+
+        <!-- Tercel ejercicio de variables -->
+        <div class="container border border-3 p-5">
+          <h2>Tercer Ejercicio</h2>
+          <p>
+            Suponiendo que 1 euro = 1.33250 dólares. Escribe un programa que
+            pida al usuario un número de dólares y calcule el cambio en euros.
+          </p>
+
+          <div>
+            <form name="convertidor">
+              <div>
+                <input
+                  id="input"
+                  type="text"
+                  name="dolar"
+                  placeholder="Dolar"
+                />
+                <button id="button" class="btn btn-dark">Convertir</button>
+              </div>
+            </form>
+          </div>
+          <div>
+            <p>Resultado...</p>
+            <div id="element"><p>...</p></div>
+          </div>
+        </div>
+
+        <!-- Cuarto ejercico -->
+        <div class="container border border-3 p-5">
+          <h2>Cuarto Ejercicio</h2>
+          <p>
+            Escribir un programa que pida por teclado cuatro números y calcule y
+            presente la media de los cuatro
+          </p>
+          <div class="p-3 border">
+            <form>
+              <div class="p-3 border">
+                <input class="num1" type="text" />
+                <input class="num1" type="text" />
+                <input class="num1" type="text" />
+                <input class="num1" type="text" />
+                <br />
+                <button id="btnMedia" class="btn btn-dark">Ver media</button>
+              </div>
+            </form>
+          </div>
+          <br />
+          <div id="element"><p>...</p></div>
+        </div>
+
+        <!-- Quinto ejercicio  -->
+
+        <div id="fooder" class="container border border-3 p-5">
+          <div class="">
+            <h1>Quinto Ejercicio</h1>
+            <p>
+              Escribir un programa que pida por teclado dos resistencias y
+              calcule y presente la resistencia equivalente en paralelo
+              (Req=(R1*R2)/(R1+R2)).
+            </p>
+          </div>
           <form>
             <div>
-              <input id="products" type="text" placeholder="Precio producto" />
-              <input id="discount" type="text" placeholder="Descuento " />
-              <button id="btn" class="btn btn-dark">Descuento</button>
+              <input id="resistencia1" type="text" />
+              <input id="resistencia2" type="text" />
+              <br />
+              <button id="btnResist" class="btn btn-dark">Calcular</button>
             </div>
           </form>
-        </div>
-        <br />
-        <p>Resultado..</p>
-        <div id="element"><p>...</p></div>
-      </div>
-      <br />
-      <!-- Tercel ejercicio de variables -->
-      <div class="container border border-3 p-5">
-        <h2>Tercer Ejercicio</h2>
-        <p>
-          Suponiendo que 1 euro = 1.33250 dólares. Escribe un programa que pida
-          al usuario un número de dólares y calcule el cambio en euros.
-        </p>
-
-        <div>
-          <form name="convertidor">
-            <div>
-              <input id="input" type="text" name="dolar" placeholder="Dolar" />
-              <button id="button" class="btn btn-dark">Convertir</button>
-            </div>
-          </form>
-        </div>
-        <div>
+          <br />
           <p>Resultado...</p>
           <div id="element"><p>...</p></div>
         </div>
-      </div>
-      <br />
 
-      <!-- Cuarto ejercico -->
-      <div class="container border border-3 p-5">
-        <h2>Cuarto Ejercicio</h2>
-        <p>
-          Escribir un programa que pida por teclado cuatro números y calcule y
-          presente la media de los cuatro
-        </p>
-        <div>
-          <form>
-            <div>
-              <input class="num1" type="text" />
-              <input class="num1" type="text" />
-              <input class="num1" type="text" />
-              <input class="num1" type="text" />
-              <button id="btnMedia" class="btn btn-dark">Ver media</button>
-            </div>
-          </form>
-        </div>
-        <br />
-        <div id="element"><p>...</p></div>
-      </div>
-
-      <br />
-      <!-- Quinto ejercicio  -->
-
-      <div id="fooder" class="container border border-3 p-5">
-        <div class="">
-          <h1>Quinto Ejercicio</h1>
+        <div class="container border border-3 p-5">
+          <h2>Cuál es la diferencia entre una variable y una constante?</h2>
           <p>
-            Escribir un programa que pida por teclado dos resistencias y calcule
-            y presente la resistencia equivalente en paralelo
-            (Req=(R1*R2)/(R1+R2)).
+            La variable <span class="text-danger">var</span> pude ser
+            modificadas y re-declaradas dentro de su ámbito
+          </p>
+
+          <p>
+            La variable <span class="text-info">let</span> pueden ser
+            modificadas, pero no re-declaradas;
+          </p>
+
+          <p>
+            las variables <span class="text-primary">const</span> no pueden ser
+            modificadas ni re-declaradas.
           </p>
         </div>
-        <form>
-          <div>
-            <input id="resistencia1" type="text" />
-            <input id="resistencia2" type="text" />
-            <button id="btnResist" class="btn btn-dark">Calcular</button>
-          </div>
-        </form>
-        <br />
-        <p>Resultado...</p>
-        <div id="element"><p>...</p></div>
       </div>
-      <br />
-      <div class="container border border-3 p-5">
-        <h2>Cuál es la diferencia entre una variable y una constante?</h2>
-        <p>
-          La variable <span class="text-danger">var</span> pude ser modificadas
-          y re-declaradas dentro de su ámbito
-        </p>
-
-        <p>
-          La variable <span class="text-info">let</span> pueden ser modificadas,
-          pero no re-declaradas;
-        </p>
-
-        <p>
-          las variables <span class="text-primary">const</span> no pueden ser
-          modificadas ni re-declaradas.
-        </p>
-      </div>
-    </div>
-    <br />
-    <br />
-    <br />
+    </section>
+    <div class="p-5"></div>
     <footer class="bg-dark">
       <div class="container-iconos">
         <div class="div-iconos">

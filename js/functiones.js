@@ -12,7 +12,7 @@ const determinarNumero = (num) => {
 };
 // console.log(`Numero ingresado ${determinarNumero(13)}`);
 
-// FUNCTION
+// FUNCTION 2
 // Hacer un programa que realice la media aritmética de 2 números.
 const arismetic = () => {
   let arr = [12, 34];

@@ -1,5 +1,10 @@
-.grid-container {
+/* .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   gap: 1rem;
 }
+.border:hover {
+  background-color: #ddd;
+  border-color: transparent;
+  transition: all 0.7s ease;
+} */

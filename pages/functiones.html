@@ -12,8 +12,8 @@
     />
 
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/function.css" />
+   
+    <link rel="stylesheet" href="../css/univesal.css" />
     <title>Condicionales</title>
   </head>
   <body>
@@ -96,8 +96,8 @@
         </div>
       </div>
     </nav>
-    <section>
-      <div class="div-function-img">
+    <section id="index">
+      <div class="div-img-variable">
         <img src="../img/function.jpg" alt="" />
         <div class="div-h2-p-boton-img">
           <h2>Ejercicio de funciones</h2>
@@ -105,159 +105,141 @@
             las instrucciones que te permiten controlar las decisiones y bucles
             de ejecución
           </p>
-          <a class="btn btn-dark" href="#medio">Ver ejercicios </a>
+          <a class="btn btn-dark" href="#primer">Ver ejercicios </a>
         </div>
       </div>
     </section>
-    <div class="container border"></div>
-    <div id="cuerpo" class="border container">
-      <div data-cuerpo="#tap1" class="btn btn-info">Sumar</div>
-      <div data-cuerpo="#tap2" class="btn btn-primary">Resatar</div>
-      <div data-cuerpo="#tap3" class="btn btn-danger">Multiplicar</div>
-      <div data-cuerpo="#tap4" class="btn btn-dark">Diividir</div>
-    </div>
-    <div id="tap1" class="container text-center p-5 border">
-      <div>
-        <p class="text-info">Sumar</p>
+    <section>
+      <div class="div-btn-desplazar">
+        <div>
+          <a href="#index">
+            <img src="../img/botonb.svg" alt="" />
+          </a>
+          <a href="#fooder">
+            <img src="../img/boton.svg" alt="" />
+          </a>
+        </div>
       </div>
-      <div class="container input border border-info rounded p-5">
-        <input
-          id="input1"
-          type="number"
-          placeholder=" numero1"
-          class="form-control"
-        />
-        <input
-          id="input2"
-          type="number"
-          placeholder="numero2"
-          class="form-control"
-        />
-        <br />
-        <button id="suma" class="btn btn-info">Suma</button>
-        <br />
-        <br />
-        <div id="element" class="border">...</div>
+    </section>
+    <section id="primer">
+      <div class="container grid-container constainer-ejercicio">
+        <div class="container border border-3 p-5">
+          <h2>Ejercicio 1</h2>
+          <p>Determinar si un número es par o no.</p>
+          <button class="btn btn-dark">resultado</button>
+        </div>
+        <div class="container border border-3">
+          <h2>Ejercicio 2</h2>
+          <p>Hacer un programa que realice la media aritmética de 2 números.</p>
+          <button class="btn btn-dark">resultado</button>
+        </div>
+        <div class="container border border-3 p-5">
+          <h2>Ejercicio 3</h2>
+          <p>
+            Hacer un programa que muestre un menú con las opciones sumar,
+            restar, multiplicar y dividir, el programa solicitará una opción y
+            realizará la tarea elegida, se debe usar procedimientos..
+          </p>
+          <button class="btn btn-dark">resultado</button>
+        </div>
+        <div class="container border border-3 p-5">
+          <h2>Ejercicio 4</h2>
+          <p>
+            Hacer un programa que pida por pantalla un número del 1 al 10 y
+            mediante un procedimiento muestre por pantalla el número escrito en
+            letras.
+          </p>
+          <button class="btn btn-dark">resultado</button>
+        </div>
+        <!--  -->
+        <div class="container border border-3 p-5">
+          <h2>Ejercicio 5</h2>
+          <p>
+            Hacer un programa que pida por pantalla una temperatura en grados
+            Celsius, muestre un menú para convertirlos a Fahrenheit o Kelvin y
+            muestre el equivalente por pantalla, utilizando funciones. Celsius a
+            Fahrenheit: F = (9*C)/5 + 32; Celsius a Kelvin: K = C + 273.15; .
+          </p>
+          <button class="btn btn-dark">resultado</button>
+        </div>
+        <!--  -->
+        <div class="container border border-3 p-5">
+          <h2>Ejercicio 6</h2>
+          <p>
+            Hacer un programa que muestre una tabla de multiplicar hasta el 20
+            de un número cualquiera por pantalla, el número se pedirá en el
+            programa principal. Usar procedimiento.
+          </p>
+          <button class="btn btn-dark">resultado</button>
+        </div>
+        <!--  -->
+        <div class="container border border-3 p-5">
+          <h2>Ejercicio 7</h2>
+          <p>
+            Hacer un programa que muestre 3 números ordenados ascendentemente,
+            utilizando un procedimiento para cada operación.
+          </p>
+          <button class="btn btn-dark">resultado</button>
+        </div>
+        <!--  -->
+        <div class="container border border-3 p-5">
+          <h2>Ejercicio</h2>
+          <p>
+            Hacer un programa que muestre 3 números ordenados descendentemente,
+            utilizar un procedimiento para cada operación.
+          </p>
+          <button class="btn btn-dark">resultado</button>
+        </div>
+        <!--  -->
+        <div class="container border border-3 p-5">
+          <h2>Ejercicio R 1</h2>
+          <p>Serie Fibonacci con Recursividad: 1.1.2.3.5.8…</p>
+          <button class="btn btn-dark">resultado</button>
+        </div>
+        <!--  -->
+        <div class="container border border-3 p-5">
+          <h2>Ejercicio R 2</h2>
+          <p>
+            Consideremos una función que recibe un número n e imprime los
+            números del n al 1 con recursividad.
+          </p>
+          <button class="btn btn-dark">resultado</button>
+        </div>
+        <!--  -->
+        <div class="container border border-3 p-5">
+          <h2>Ejercicio R 3</h2>
+          <p>Pasar de número entero a número binario con Recursividad.</p>
+          <button class="btn btn-dark">resultado</button>
+        </div>
+        <!--  -->
+        <div class="container border border-3 p-5">
+          <h2>Ejercicio R 1</h2>
+          <p>Invertir un número entero con Recursividad.</p>
+          <button class="btn btn-dark">resultado</button>
+        </div>
       </div>
-    </div>
-    <div id="tap2" class="container tap text-center border p-5 mb-3">
-      <p class="text-primary">Restar</p>
-      <div class="container input border border-primary rounded p-5">
-        <input id="resta1" type="" placeholder="numero" class="form-control" />
-        <input id="resta2" type="" placeholder="numero" class="form-control" />
-        <br />
-        <button id="resta" class="btn btn-primary">Resta</button>
-        <br />
-        <br />
-        <div id="elementRest" class="border">...</div>
+    </section>
+    <div id="footer" class="p-5"></div>
+    <footer class="bg-dark">
+      <div class="container-iconos">
+        <div class="div-iconos">
+          <div class="div2-iconos">
+            <a href="#">
+              <img src="../img/linkedin.svg" alt="" />
+            </a>
+
+            <a href="">
+              <img src="../img/github.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="div-parrafos">
+          <p>Pagina hecho por Torcoroma Arias Ascanio</p>
+          <p>torcoromaarias@gmail.com</p>
+        </div>
       </div>
-    </div>
-    <div id="tap3" class="tap border container text-center p-5 mb-5">
-      <p class="text-danger">Multiplication</p>
-      <div class="container input border border-danger rounded p-5">
-        <input
-          id="inputMult1"
-          type=""
-          placeholder="numero"
-          class="form-control"
-        />
-        <input
-          id="inputMult2"
-          type=""
-          placeholder="numero"
-          class="form-control"
-        />
-        <button id="multButon" class="btn btn-danger">multip</button>
-        <div id="elementMult" class="border">...</div>
-      </div>
-    </div>
-    <div id="tap4" class="tap border container text-center p-5 mb-3">
-      <p class="text-dark">Dividir</p>
-      <div class="container input border border-dark rounded p-5">
-        <input id="divici1" type="" placeholder="numero" class="form-control" />
-        <input id="divici2" type="" placeholder="numero" class="form-control" />
-        <button id="diviBoton" class="btn btn-dark">Dividir</button>
-        <div id="elementDiv" class="border">...</div>
-      </div>
-    </div>
-    <br />
-    <br />
-    <!-- EJERCICIO 4 -->
-    <div class="container border text-center">
-      <br />
-      <p>
-        Hacer un programa que pida por pantalla un número del 1 al 10 y mediante
-        un procedimiento muestre por pantalla el número escrito en letras.
-      </p>
-      <div class="container input border border-dark rounded p-5">
-        <button id="boton" class="btn btn-info">Ingresar #</button>
-        <br />
-        <div id="elemento">...</div>
-      </div>
-    </div>
-
-    <!-- EJERCICIO 5 -->
-    <div class="container border text-center">
-      <br />
-      <p>
-        Hacer un programa que pida por pantalla una temperatura en grados
-        Celsius, muestre un menú para convertirlos a Fahrenheit o Kelvin y
-        muestre el equivalente por pantalla, utilizando funciones. Celsius a
-        Fahrenheit: F = (9*C)/5 + 32; Celsius a Kelvin: K = C + 273.15;
-      </p>
-      <div class="container input border border-dark rounded p-5">
-        <button id="botKelvin" class="btn btn-info">Celsios a Kelvin</button>
-        <button id="botCelsios" class="btn btn-info">
-          Celsios a Fahrenheit
-        </button>
-        <br />
-        <br />
-        <p>Celsius a Fahrenheit:</p>
-        <div id="elementGr" class="border">...</div>
-      </div>
-
-      <div class="element"></div>
-    </div>
-
-    <!-- EJERCICIO 6 -->
-    <div class="container border text-center">
-      <br />
-      <p>
-        Hacer un programa que muestre una tabla de multiplicar hasta el 20 de un
-        número cualquiera por pantalla, el número se pedirá en el programa
-        principal. Usar procedimiento.
-      </p>
-      <div class="container input border border-dark rounded p-5 scrol">
-        <button id="tabla" class="btn btn-info">Tabla</button>
-
-        <br />
-        <br />
-
-        <div id="elementTabla" class=""></div>
-      </div>
-
-      <div class="element"></div>
-    </div>
-
-    <!-- EJERCICIO 7 -->
-    <div class="container border text-center">
-      <br />
-      <p>
-        Hacer un programa que muestre 3 números ordenados ascendentemente,
-        utilizando un procedimiento para cada operación.
-      </p>
-      <div class="container input border border-dark rounded p-5">
-        <button id="tabla" class="btn btn-info">numero</button>
-
-        <br />
-        <br />
-
-        <div id="elementNumero" class=""></div>
-      </div>
-
-      <div class="element"></div>
-    </div>
+    </footer>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <!-- <script src="../js/functiones.js"></script> -->
+    <script src="../js/functiones.js"></script>
   </body>
 </html>
