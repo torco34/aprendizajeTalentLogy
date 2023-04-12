@@ -1,10 +1,16 @@
-/* .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-  gap: 1rem;
+.container-logica {
+  padding: 10px;
 }
-.border:hover {
-  background-color: #ddd;
-  border-color: transparent;
-  transition: all 0.7s ease;
-} */
+.container-logica h2 {
+  font-size: calc(0.8em + 0.8vw);
+  font-family: "Righteous";
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+.bagron {
+  background-color: #dfdfde;
+}
+.container-ejercici {
+  margin-top: 8rem;
+ 
+}
