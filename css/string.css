@@ -1,55 +1,20 @@
-.strings {
-  position: relative;
-  top: 5rem;
-  text-align: center;
+.constainer-string {
+  border-right: 5px solid #f5576c8a;
+  padding-bottom: 2rem;
+  background-color: #eeeeee;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
 }
-.border {
-  margin-top: 5rem;
-  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.9); */
-}
-.border h2 {
-  color: #f44c62d9;
-}
-.div-img-string {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.div-img-string img {
-  width: 100%;
-  height: 80vh;
-  object-fit: cover;
-  display: block;
-}
-.div-img-string:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), #050506);
-}
-.div-h2-p-boton-img-strin {
-  position: absolute;
-  color: #fff;
-  font-family: monospace;
-  display: block;
-  text-align: center;
-}
-.div-h2-p-boton-img-strin h2 {
-  font-size: calc(1.5em + 1.5vw);
-}
-.div-h2-p-boton-img-strin a {
-  background-color: #f5576c8a;
-  font-size: calc(0.4em + 0.4vw);
-  padding: 1rem;
+.constainer-string h2 {
+  margin-bottom: 3rem;
   font-weight: bold;
 }
-.btn {
-  background-color: #f5576c8a;
-  font-size: calc(0.4em + 0.4vw);
+.div-text {
+  line-height: 24px;
+}
+
+.container-div {
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+  padding: 2rem;
 }

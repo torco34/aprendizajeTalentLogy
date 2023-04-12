@@ -2,8 +2,7 @@
   padding: 10px;
 }
 .container-logica h2 {
-  font-size: calc(0.8em + 0.8vw);
-  font-family: "Righteous";
+ 
   margin-bottom: 3rem;
   font-weight: bold;
 }
@@ -12,5 +11,4 @@
 }
 .container-ejercici {
   margin-top: 8rem;
- 
 }

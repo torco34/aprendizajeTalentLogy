@@ -1,15 +1,12 @@
-/* 
-.div-h2-p-boton-condi h2 {
-  font-size: calc(1.5em + 1.5vw);
-}
-.div-h2-p-boton-condi a {
-  background-color: #f5576c8a;
-  font-size: calc(0.4em + 0.4vw);
-  padding: 1rem;
-  font-weight: bold;
-}
-.btn {
-  background-color: #f5576c8a;
-  font-size: calc(0.4em + 0.4vw);
-} */
+.constainer-condicion {
 
+  margin-top: 50px;
+}
+.borders {
+  margin-top: 50px;
+  margin-bottom: 4rem;
+  padding: 40px;
+}
+.borders h2 {
+  margin-bottom: 3rem;
+}

@@ -14,7 +14,7 @@ html {
 }
 h2 {
   font-weight: bold;
-  font-family: monospace;
+ 
   font-size: calc(0.7em + 0.8vw);
 }
 .btn {
