@@ -84,17 +84,7 @@ h2 {
   font-weight: bold;
 }
 /* SECTION DE BODY */
-.grid-container {
-  /* display: grid; */
-  /* grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); */
-  /* gap: 1rem; */
-}
-/* //// */
-.border:hover {
-  /* background-color: #fbf4f4;
-  border-color: transparent;
-  transition: all 0.7s ease; */
-}
+
 .constainer-ejercicio {
   margin-top: 3rem;
   padding: 1rem;
@@ -128,10 +118,6 @@ h2 {
   background-color: #f5576cd9;
   border-color: transparent;
   transition: all 0.7s ease;
-  -webkit-transition: all 0.7s ease;
-  -moz-transition: all 0.7s ease;
-  -ms-transition: all 0.7s ease;
-  -o-transition: all 0.7s ease;
 }
 /* section de footer */
 
