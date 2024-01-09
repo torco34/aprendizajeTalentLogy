@@ -38,7 +38,7 @@ function sacarMediaArray() {
   elementArr2.innerHTML = `<p>La  media de la array:     ${resultadoMedia}</p>`;
 }
 
-arrBoton2.addEventListener("click", sacarMediaArray);
+// arrBoton2.addEventListener("click", sacarMediaArray);
 
 // EJERCICIO DE ARRAY 3
 // Buscar un elemento dentro de un arreglo que nosotros le pedimos
